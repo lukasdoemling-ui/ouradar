@@ -16,7 +16,9 @@ const API_KEY = process.env.ANTHROPIC_API_KEY || "";
 const GEMINI_KEY = process.env.GEMINI_API_KEY || "";
 // Kostenlose Gemini-Modelle (Free Tier), in dieser Reihenfolge probiert:
 const GEMINI_MODELS = (process.env.OURADAR_GEMINI_MODELS || "gemini-4-hydrogen,gemini-2.5-flash,gemini-2.5-flash-lite").split(",").map(s => s.trim()).filter(Boolean);
-const HAS_AI = !!(GEMINI_KEY || API_KEY);
+const LOCAL_URL = process.env.LOCAL_LLM_URL || "";   // z. B. http://127.0.0.1:8080 (freies Modell im Ablauf)
+let LOCAL_OK = false;
+const HAS_AI = () => !!(API_KEY || LOCAL_OK || GEMINI_KEY);
 const MODEL_SUMMARY = process.env.OURADAR_MODEL_SUMMARY || "claude-haiku-5-5";
 const MODEL_SEARCH = process.env.OURADAR_MODEL_SEARCH || "claude-sonnet-5-5";
 const MAX_NEW_PER_RUN = 25;      // Kostenbremse: höchstens so viele neue Studien pro Lauf
@@ -153,13 +155,64 @@ async function gemini(prompt, { search = false, json = true } = {}) {
   throw new Error("Gemini nicht erreichbar (Limit?)");
 }
 
-// Einheitlicher Zugang: Gemini (kostenlos) bevorzugt, sonst Claude
+// ---------- Freies Modell (llama.cpp-Server im GitHub-Ablauf) ----------
+async function localHealth() {
+  if (!LOCAL_URL) return false;
+  try { const r = await fetch(LOCAL_URL + "/health"); return r.ok; } catch { return false; }
+}
+async function local(prompt) {
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      const r = await fetch(LOCAL_URL + "/v1/chat/completions", {
+        method: "POST", headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          messages: [
+            { role: "system", content: "Du bist ein sorgfältiger medizinischer Fachübersetzer. Du gibst ausschließlich Informationen wieder, die im gelieferten Text stehen. Du erfindest nichts. Du antwortest nur mit gültigem JSON." },
+            { role: "user", content: prompt }
+          ],
+          temperature: 0, top_p: 1, max_tokens: 600, response_format: { type: "json_object" }
+        })
+      });
+      if (r.ok) { const j = await r.json(); return j.choices?.[0]?.message?.content || ""; }
+      log("Lokales Modell HTTP", r.status);
+    } catch (e) { log("Lokales Modell Fehler", e.message); }
+    await sleep(3000);
+  }
+  throw new Error("Lokales Modell nicht erreichbar");
+}
+
+// ---------- Prüfungen gegen erfundene Inhalte ----------
+const NUMWORDS = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10, eleven: 11, twelve: 12, twenty: 20, hundred: 100, single: 1, double: 2, twice: 2, half: 0.5, first: 1, second: 2, third: 3 };
+const normNum = x => { let v = x.replace(/\s/g, "").replace(/(\d)[.,](\d{3})(?!\d)/g, "$1$2").replace(",", "."); const n = Number(v); return isFinite(n) ? String(n) : v; };
+function numbersIn(text) { return (String(text).match(/\d+(?:[.,]\d+)*(?:[.,]\d+)?/g) || []).map(normNum); }
+function sourceNumbers(src) {
+  const set = new Set(numbersIn(src));
+  for (const [w, n] of Object.entries(NUMWORDS)) if (new RegExp("\\b" + w + "\\b", "i").test(src)) set.add(String(n));
+  return set;
+}
+// Liefert null, wenn der Text sauber ist, sonst den Grund
+export function checkAgainstSource(out, src) {
+  if (!out) return null;
+  const allowed = sourceNumbers(src);
+  const bad = numbersIn(out).filter(n => !allowed.has(n));
+  if (bad.length) return "Zahl nicht in der Quelle: " + bad.slice(0, 3).join(", ");
+  // Empfehlungen nur, wenn die Quelle selbst eine ausspricht
+  if (/(empfehl|sollte[n]? |sollen |muss |müssen |indiziert|Therapie der Wahl)/i.test(out) && !/(recommend|should|must|guideline|suggest|advis)/i.test(src))
+    return "Empfehlung, die nicht in der Quelle steht";
+  if (out.length > 600) return "zu lang";
+  return null;
+}
+
+// Einheitlicher Zugang: Claude (falls Schlüssel) > freies Modell > Gemini
 async function llm(prompt, { search = false, open = "{" } = {}) {
+  if (!API_KEY && LOCAL_OK && !search) {
+    return extractJson(await local(prompt), open);
+  }
   if (GEMINI_KEY && !API_KEY && search) {
     // Google verbietet, Ergebnisse der Google-Suche (Grounding) zu speichern/weiterzuverbreiten -> AWMF-Suche nur mit Claude
     throw new Error("AWMF-Suche benötigt ANTHROPIC_API_KEY");
   }
-  if (GEMINI_KEY && !search) {
+  if (GEMINI_KEY && !API_KEY && !search) {
     const out = await gemini(prompt, { search: false });
     await sleep(Number(process.env.OURADAR_SLEEP ?? 7000)); // Free Tier: wenige Anfragen pro Minute
     return extractJson(out, open);
@@ -186,7 +239,32 @@ Regeln:
 - Eigene Worte, keine wörtlichen Sätze aus der Quelle übernehmen.
 - Deutsch, prägnant.`;
 
+async function summarizeStudyStrict(a) {
+  const prompt = `Aufgabe: Gib die folgende englische Publikation auf Deutsch wieder. STRENGE REGELN:
+1. Verwende NUR Informationen aus Titel und Abstract unten. Nichts hinzufügen, nichts schlussfolgern, kein Hintergrundwissen.
+2. Übernimm Zahlen exakt so, wie sie im Abstract stehen. Keine Zahl, die nicht im Abstract steht. Keine Dosierungen, keine Rechenergebnisse.
+3. Keine eigenen Empfehlungen. "fazit" ist ausschließlich die Schlussfolgerung der Autoren aus dem Abstract (Abschnitt CONCLUSION/INTERPRETATION), sinngemäß übersetzt. Gibt es keine, dann "".
+4. Wenn du etwas nicht sicher aus dem Text entnehmen kannst, lass das Feld leer ("").
+5. Kurz und sachlich.
+
+Titel: ${a.title}
+Typ: ${a.st}
+Abstract:
+${a.abstract}
+
+Antworte nur mit JSON:
+{"titel": "deutsche Übersetzung des Titels",
+ "worum": "1 Satz: Fragestellung und Studiendesign/Fallzahl laut Abstract",
+ "ergebnis": "1–2 Sätze: Hauptergebnis laut Abstract",
+ "fazit": "1 Satz: Schlussfolgerung der Autoren laut Abstract",
+ "relevant": true oder false (false nur, wenn das Thema nichts mit Orthopädie/Unfallchirurgie zu tun hat),
+ "bereich": Liste aus "trauma","alter","endo","fuss","knie","schulter","ws","kinder","infekt"}`;
+  const s = await llm(prompt);
+  return { titel: s.titel, kurz: [s.worum, s.ergebnis].filter(Boolean).join(" "), praxis: s.fazit || "", relevant: s.relevant, bereich: s.bereich, praxisLabel: "Fazit der Autoren (laut Abstract)" };
+}
+
 async function summarizeStudy(a) {
+  if (!API_KEY) return summarizeStudyStrict(a); // freie Modelle: nur striktes, quellentreues Format
   const prompt = `${SUMMARY_RULES}
 
 Publikation:
@@ -235,6 +313,9 @@ export async function main() {
   const known = new Set(items.map(i => i.id));
   const added = [];
 
+  LOCAL_OK = await localHealth();
+  log("KI:", API_KEY ? "Claude" : LOCAL_OK ? "freies Modell (lokal)" : GEMINI_KEY ? "Gemini" : "keine – nur Titel/Links");
+
   // 1) PubMed
   log("PubMed-Suche …");
   let studies = [];
@@ -249,14 +330,26 @@ export async function main() {
       quelle: `${a.first ? a.first + " et al., " : ""}${a.journal} ${a.y} · PMID ${a.pmid}`,
       kurz: "", praxis: "", link: `https://pubmed.ncbi.nlm.nih.gov/${a.pmid}/`, ki: false, quelleTyp: "pubmed"
     };
-    if (HAS_AI && a.abstract) {
+    if (HAS_AI() && a.abstract) {
       try {
         const s = await summarizeStudy(a);
         if (s.relevant === false) { log("nicht relevant:", a.pmid); blocked.add(id); continue; }
+        const src = a.title + "\n" + a.abstract;
+        const pTitel = checkAgainstSource(s.titel, src);
+        const pKurz = checkAgainstSource(s.kurz, src);
+        const pPraxis = checkAgainstSource(s.praxis, src);
+        if (pTitel) log("Titel verworfen", a.pmid, pTitel);
+        if (pKurz) log("Kurzfassung verworfen", a.pmid, pKurz);
+        if (pPraxis) log("Fazit verworfen", a.pmid, pPraxis);
+        const kurzOk = !pKurz && s.kurz;
         Object.assign(base, {
-          titel: s.titel || a.title, originaltitel: a.title, kurz: s.kurz || "", praxis: s.praxis || "",
-          bereich: cleanBereich(s.bereich).length ? cleanBereich(s.bereich) : a.bereich, ki: true
+          titel: (!pTitel && s.titel) ? s.titel : a.title, originaltitel: a.title,
+          kurz: kurzOk ? s.kurz : "",
+          praxis: (kurzOk && !pPraxis) ? (s.praxis || "") : "",
+          bereich: cleanBereich(s.bereich).length ? cleanBereich(s.bereich) : a.bereich,
+          ki: !!(kurzOk || (!pTitel && s.titel))
         });
+        if (s.praxisLabel && base.praxis) base.praxisLabel = s.praxisLabel;
       } catch (e) { log("Zusammenfassung fehlgeschlagen", a.pmid, e.message); }
     }
     added.push(base);
@@ -265,7 +358,7 @@ export async function main() {
   // 2) AWMF (wöchentlich)
   const lastAwmf = feed.lastAwmfCheck ? Date.parse(feed.lastAwmfCheck) : 0;
   let lastAwmfCheck = feed.lastAwmfCheck || null;
-  if (HAS_AI && Date.now() - lastAwmf > (AWMF_EVERY_DAYS - 0.5) * 864e5) {
+  if (API_KEY && Date.now() - lastAwmf > (AWMF_EVERY_DAYS - 0.5) * 864e5) {
     log("AWMF-Suche …");
     try {
       const knownLL = new Set(items.filter(i => i.quelleTyp === "awmf").map(i => i.id.replace(/^awmf-/, "")));
