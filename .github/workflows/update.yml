@@ -24,11 +24,17 @@ jobs:
       - name: Neue Studien und Leitlinien holen und zusammenfassen
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: node scripts/update.mjs
+        run: |
+          mkdir -p docs
+          cp feed.json blocked.json docs/
+          node update.mjs
+          cp docs/feed.json docs/blocked.json .
+          rm -rf docs
       - name: Ergebnis speichern
         run: |
           git config user.name "ouradar-bot"
           git config user.email "ouradar-bot@users.noreply.github.com"
-          git add docs/feed.json docs/blocked.json
+          git add feed.json blocked.json
           git diff --cached --quiet || git commit -m "Feed-Update $(date -u +%Y-%m-%d)"
           git push
+
