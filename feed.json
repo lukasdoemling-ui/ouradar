@@ -1,0 +1,310 @@
+{
+ "version": 1,
+ "generated": "2026-11-15T17:14:54.900Z",
+ "lastAwmfCheck": null,
+ "hinweis": "KI-erstellte Zusammenfassungen (ki: true) sind nicht ärztlich geprüft. Maßgeblich ist die verlinkte Originalquelle. Publikationsdaten: PubMed®/NLM.",
+ "items": [
+  {
+   "id": "epcat3",
+   "typ": "studie",
+   "status": "RCT · NEJM",
+   "datum": "2026-08",
+   "bereich": [
+    "endo",
+    "infekt"
+   ],
+   "titel": "EPCAT III: ASS vs. Rivaroxaban zur VTE-Prophylaxe nach Hüft-/Knie-TEP",
+   "quelle": "N Engl J Med 2026 · vorgestellt auf ISTH 2026",
+   "kurz": "Randomisierte Studie: ASS führte nach Gelenkersatz nicht häufiger zu VTE als eine initiale Antikoagulation mit Rivaroxaban. Auch die Blutungsrisiken waren vergleichbar.",
+   "praxis": "Stützt die neue S3-Empfehlung: Bei niedrigem Thromboserisiko reicht nach Hüft-/Knie-TEP eine VTE-Prophylaxe mit ASS.",
+   "link": "https://www.aerzteblatt.de/news/endoprothetik-bei-niedrigem-thromboserisiko-reicht-eine-vte-prophylaxe-mit-ass-d570b803-194b-42f7-b01c-bf918e08c93e",
+   "ki": true,
+   "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "aaos-ankle",
+   "typ": "leitlinie",
+   "status": "Neu (international)",
+   "datum": "2026-07",
+   "bereich": [
+    "fuss"
+   ],
+   "titel": "AAOS Clinical Practice Guideline: Management der Sprunggelenksarthrose",
+   "quelle": "American Academy of Orthopaedic Surgeons",
+   "kurz": "Erste eigene Leitlinie zur OSG-Arthrose. Wegen dünner Evidenz nur zwei evidenzbasierte Empfehlungen plus 11 Konsens-Optionen. 70–80 % der Fälle sind posttraumatisch, die Patienten oft jünger und im Erwerbsalter.",
+   "praxis": "Stark gegen intraartikuläre Hyaluronsäure allein, moderat gegen PRP (kein Vorteil gegenüber Placebo). Im Endstadium sind Arthrodese und Sprunggelenksprothese beide vertretbar – Entscheidung nach Patientenzielen.",
+   "link": "https://www.aaos.org/aaos-home/newsroom/press-releases/aaos-releases-clinical-practice-guideline-for-management-of-ankle-osteoarthritis/",
+   "ki": true,
+   "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "duality",
+   "typ": "studie",
+   "status": "RCT · Lancet",
+   "datum": "2026-07",
+   "bereich": [
+    "alter",
+    "endo"
+   ],
+   "titel": "DUALITY: Dual-Mobility- vs. Standard-Pfanne bei Hüft-TEP nach Schenkelhalsfraktur",
+   "quelle": "Hailer et al., The Lancet 2026 · n = 1.600, 44 Kliniken (UK/Schweden)",
+   "kurz": "Bei dislozierten Schenkelhalsfrakturen älterer Patienten, die eine Hüft-TEP erhielten, senkte die Dual-Mobility-Pfanne die Luxationsrate im ersten Jahr von 4,2 % auf 1,3 % (ca. 70 % weniger). Infektionen und Mortalität stiegen nicht.",
+   "praxis": "Dual-Mobility sollte bei geeigneten älteren Frakturpatienten mit TEP-Indikation bevorzugt erwogen werden; keine neue Technik oder Schulung nötig.",
+   "link": "https://www.qmul.ac.uk/news/latest-news/2026/medicine-and-dentistry/fmd/hip-fracture-patients-three-times-less-likely-to-need-repeat-surgery-with-dual-mobility-hip-replacements.html",
+   "ki": true,
+   "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "prp-acl",
+   "typ": "studie",
+   "status": "RCT",
+   "datum": "2026-07",
+   "bereich": [
+    "knie"
+   ],
+   "titel": "PRP oder BMAC als Zusatz bei VKB-Plastik: kein Vorteil nach 2 Jahren",
+   "quelle": "Level-I-RCT · n = 175, Semitendinosus-Autograft",
+   "kurz": "Weder plättchenreiches Plasma noch Knochenmarkaspirat-Konzentrat verbesserten nach ca. 2 Jahren das klinische oder MRT-Ergebnis; der BMAC-Arm zeigte im MRT sogar ein ungünstigeres Signalmuster.",
+   "praxis": "Biologische Augmentation der VKB-Plastik ist derzeit nicht durch Evidenz gedeckt.",
+   "link": "https://reachmd.com/news/prp-or-bmac-added-to-acl-reconstruction-shows-no-2-year-benefit/2487786/",
+   "ki": true,
+   "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "aaos-rc",
+   "typ": "leitlinie",
+   "status": "Neu (international)",
+   "datum": "2026-06",
+   "bereich": [
+    "schulter",
+    "endo"
+   ],
+   "titel": "AAOS: Appropriate Use Criteria Rotatorenmanschette & ARCO-Leitlinie Hüftkopfnekrose",
+   "quelle": "American Academy of Orthopaedic Surgeons",
+   "kurz": "Neue AUC zur Rotatorenmanschetten-Pathologie, abgestimmt auf die 2025 aktualisierte Leitlinie. Zusätzlich hat die AAOS die ARCO-Leitlinie zur nicht-traumatischen Hüftkopfnekrose offiziell übernommen (Endorsement).",
+   "praxis": "Strukturierte Indikationshilfe, wann bei RM-Läsionen konservativ, rekonstruktiv oder endoprothetisch vorgegangen werden sollte.",
+   "link": "https://www.aaos.org/aaosnow/2026/jul/research/research04/",
+   "ki": true,
+   "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "phf-reha",
+   "typ": "studie",
+   "status": "RCT · JSES",
+   "datum": "2026-06",
+   "bereich": [
+    "schulter",
+    "alter"
+   ],
+   "titel": "Proximale Humerusfraktur (konservativ): angeleitete Physio vs. einmalige Beratung",
+   "quelle": "Liaghat et al., J Shoulder Elbow Surg 2026 · n = 60, ≥ 60 J.",
+   "kurz": "Bei älteren Patienten mit konservativ behandelter dislozierter proximaler Humerusfraktur war eine zusätzliche supervidierte Rehabilitation einer einzelnen Beratungssitzung nach 6 Monaten (Oxford Shoulder Score) nicht überlegen.",
+   "praxis": "Einzelne gute Anleitung + Heimübungen kann ausreichen. Die größere UK-Studie REACH zur selben Frage läuft noch.",
+   "link": "https://research.regionh.dk/da/publications/supervised-rehabilitation-comparable-to-single-advice-session-aft/",
+   "ki": true,
+   "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "metahip",
+   "typ": "studie",
+   "status": "RCT · Acta Orthop",
+   "datum": "2026-05",
+   "bereich": [
+    "alter"
+   ],
+   "titel": "MetaHip: Intraoperatives Methadon bei Hüftfraktur",
+   "quelle": "Acta Orthopaedica 2026;97:255–264 · doppelblind, Dänemark",
+   "kurz": "Eine intraoperative Einzeldosis Methadon beeinflusste den postoperativen Morphinverbrauch bei älteren Hüftfraktur-Patienten signifikant. Erste randomisierte Studie dazu in dieser Population.",
+   "praxis": "Interessanter Ansatz zur opioidsparenden Analgesie in der Alterstraumatologie, aber monozentrisch – vor Routineeinsatz weitere Daten abwarten.",
+   "link": "https://actaorthop.org/actao/article/download/44754/53456/185445",
+   "ki": true,
+   "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "fri-s2k",
+   "typ": "leitlinie",
+   "status": "Neu",
+   "datum": "2026-04",
+   "bereich": [
+    "trauma",
+    "infekt"
+   ],
+   "titel": "S2k-Leitlinie Frakturassoziierte Infektion nach Osteosynthese",
+   "quelle": "AWMF 187-047 · DGOU, 17 Fachgesellschaften",
+   "kurz": "Neue Leitlinie zu Diagnostik und Therapie der frakturassoziierten Infektion (FRI). Mehrere Empfehlungen mit Stand 2026. Für die perioperative Prophylaxe wird auf die S3-Leitlinie Antibiotikaprophylaxe (AWMF 067-009) verwiesen.",
+   "praxis": "Die fachgerechte intraoperative Gewebeprobenentnahme ist das wichtigste diagnostische Element. Bei adipösen Patienten (≥ 100–120 kg) ist eine Dosisanpassung der Prophylaxe auf 3 g vorgesehen; Nachdosierung bei hohem Blutverlust (> 1,5 l).",
+   "link": "https://register.awmf.org/de/leitlinien/detail/187-047",
+   "ki": true,
+   "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "tobra",
+   "typ": "studie",
+   "status": "RCT · JAMA",
+   "datum": "2026-04",
+   "bereich": [
+    "trauma",
+    "infekt"
+   ],
+   "titel": "TOBRA: Lokales Tobramycin + Vancomycin bei periartikulären Tibiafrakturen",
+   "quelle": "O’Toole et al. (METRC), JAMA 2026 · n = 1.528, 39 Traumazentren",
+   "kurz": "Bei operativ versorgten Tibiakopf- und Pilonfrakturen mit erhöhtem Infektrisiko senkte die zusätzliche Tobramycin-Pulvergabe die tiefe Wundinfektion nicht (7,4 % vs. 6,6 % mit Vancomycin allein). In der Subgruppe offener Frakturen waren die Infektionsraten mit der Kombination sogar höher.",
+   "praxis": "Routinemäßig zusätzliches Tobramycin-Pulver bringt keinen Vorteil – Praxis kritisch überdenken.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41984450/",
+   "ki": true,
+   "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "crafft",
+   "typ": "studie",
+   "status": "RCT · Lancet",
+   "datum": "2026-04",
+   "bereich": [
+    "kinder",
+    "trauma"
+   ],
+   "titel": "CRAFFT: Gips vs. Reposition bei stark dislozierter distaler Radiusfraktur (4–10 J.)",
+   "quelle": "Perry et al., Lancet 2026;407:1538–48 · n = 750, 49 Kliniken (UK)",
+   "kurz": "PROMIS-Score nach 3 Monaten 44,9 (Gips ohne Reposition) vs. 46,6 (operative Reposition). Die Nicht-Unterlegenheit wurde knapp verfehlt, der Unterschied war aber klein, unter der für Familien relevanten Schwelle und nicht dauerhaft. Komplikationen traten überwiegend in der OP-Gruppe auf; Gips war deutlich günstiger.",
+   "praxis": "Die Autoren empfehlen, bei den meisten Kindern zuerst eine Gipsbehandlung zu erwägen – auch bei vollständig verschobenen Frakturen.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41965242/",
+   "ki": true,
+   "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "frailty-s3",
+   "typ": "leitlinie",
+   "status": "Neu",
+   "datum": "2026-03",
+   "bereich": [
+    "alter",
+    "infekt"
+   ],
+   "titel": "S3-Leitlinie Perioperative Versorgung von Patientinnen und Patienten mit Frailty",
+   "quelle": "DGAI + 24 Fachgesellschaften (bei der AWMF angemeldet)",
+   "kurz": "Erste S3-Leitlinie zum perioperativen Umgang mit gebrechlichen Patienten, stationär und ambulant, inklusive Patienteninformationen. Gefördert vom Innovationsausschuss des G-BA.",
+   "praxis": "Relevant für die Alterstraumatologie (z. B. hüftgelenknahe Frakturen): Frailty-Screening und darauf abgestimmte perioperative Planung werden zum Standard.",
+   "link": "https://www.aerzteblatt.de/news/operationen-s3-leitlinie-zum-umgang-mit-gebrechlichen-patienten-vorgestellt-cca90b77-a475-4a85-9f1a-0f9d2747a2d0",
+   "ki": true,
+   "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "aaos-feb",
+   "typ": "leitlinie",
+   "status": "Aktualisiert (international)",
+   "datum": "2026-02",
+   "bereich": [
+    "trauma",
+    "schulter"
+   ],
+   "titel": "AAOS: Kompartmentsyndrom-Leitlinie (Rapid Update), AUC Klavikulaschaftfrakturen, Psychosoziale Faktoren",
+   "quelle": "American Academy of Orthopaedic Surgeons",
+   "kurz": "Rapid Update der Leitlinie zum akuten Kompartmentsyndrom (Inhalt im Wesentlichen unverändert, da keine ausreichend neue Evidenz). Neue Appropriate Use Criteria zur Behandlung von Klavikulaschaftfrakturen. Neues Positionspapier zu psychosozialen Faktoren nach Trauma.",
+   "praxis": "Psychische und soziale Faktoren beeinflussen das Outcome nach Extremitätentrauma deutlich – Screening und Ansprache werden ausdrücklich empfohlen.",
+   "link": "https://new.aaos.org/aaosnow/2026/feb/research/research02/",
+   "ki": true,
+   "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "vte-s3",
+   "typ": "leitlinie",
+   "status": "Aktualisiert",
+   "datum": "2026-01",
+   "bereich": [
+    "endo",
+    "trauma",
+    "infekt"
+   ],
+   "titel": "S3-Leitlinie Prophylaxe der venösen Thromboembolie (VTE), Version 4.0",
+   "quelle": "AWMF 003-001 · DGCH/DGIM, DGOU beteiligt",
+   "kurz": "Vollständige Überarbeitung. ASS wird erstmals evidenzbasiert zur VTE-Prophylaxe bei unfallchirurgisch-orthopädischen Eingriffen an der unteren Extremität empfohlen – aber nur bei Patienten ohne erhöhtes VTE- oder Blutungsrisiko. Bei elektiven Eingriffen beginnt die medikamentöse Prophylaxe postoperativ. VKA und Cava-Filter werden zur Primärprophylaxe nicht empfohlen.",
+   "praxis": "Früher war ASS „off label“ und nur in Einzelfällen vorgesehen – jetzt reguläre Option z. B. nach Hüft-/Knie-TEP bei Niedrigrisiko-Patienten. Aktive Tumorerkrankung, Thrombose- oder Blutungsanamnese → weiterhin NMH/DOAK.",
+   "link": "https://register.awmf.org/de/leitlinien/detail/003-001",
+   "ki": true,
+   "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "hv-s2e",
+   "typ": "leitlinie",
+   "status": "Aktualisiert",
+   "datum": "2026-01",
+   "bereich": [
+    "fuss"
+   ],
+   "titel": "S2e-Leitlinie Hallux valgus, Version 5.2",
+   "quelle": "AWMF 187-051 · D.A.F. (Sektion der DGOU)",
+   "kurz": "Überarbeitung auf Basis eines „living systematic review“. Die Deformität wird nur noch in zwei Schweregrade eingeteilt: leicht/moderat (IMW ≤ 18°, HVW ≤ 40°) und schwer (IMW > 18°, HVW > 40°). Wichtigste Ursache laut Leitlinie ist die familiäre Veranlagung, nicht das Schuhwerk.",
+   "praxis": "Vor einer OP zunächst ca. 3 Monate konservativ (Analgesie, physikalische Therapie, Schienen, Taping). OP-Indikation erst bei symptomatischem HV nach erfolgloser konservativer Therapie; ein asymptomatischer HV ist keine OP-Indikation.",
+   "link": "https://register.awmf.org/de/leitlinien/detail/187-051",
+   "ki": true,
+   "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "superfin",
+   "typ": "studie",
+   "status": "RCT · BMJ",
+   "datum": "2026-01",
+   "bereich": [
+    "fuss",
+    "trauma"
+   ],
+   "titel": "SUPER-FIN: Gips vs. OP bei instabiler Weber-B-Fraktur",
+   "quelle": "Kortekangas et al., BMJ 2026 · n = 126, monozentrisch (Finnland)",
+   "kurz": "Bei Weber-B-Frakturen mit positivem Außenrotations-Stresstest war 6 Wochen Gips der OP nach 2 Jahren nicht unterlegen (OMAS 89 vs. 87). Auch Schmerz, Funktion, Lebensqualität und Röntgen unterschieden sich nicht; mit Gips gab es weniger behandlungsbedingte Komplikationen.",
+   "praxis": "Stärkt die konservative Therapie auch bei „stressinstabilen“ isolierten Außenknöchelfrakturen. Einschränkung: monozentrisch, und der Stresstest ist als Instabilitätskriterium umstritten.",
+   "link": "https://www.bmj.com/content/392/bmj-2025-085295",
+   "ki": true,
+   "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "allinside",
+   "typ": "studie",
+   "status": "RCT · CORR",
+   "datum": "2026-01",
+   "bereich": [
+    "knie"
+   ],
+   "titel": "All-inside vs. kompletter Tibiatunnel bei VKB-Plastik",
+   "quelle": "Clin Orthop Relat Res 2026;484(1):149–161 · n = 71",
+   "kurz": "Kein Unterschied bei klinischem Ergebnis, Transplantateinheilung oder Tunnelerweiterung zwischen All-inside-Technik und kompletter Tibiatunnel-Technik (gleiche Fixation).",
+   "praxis": "Die Wahl der Technik kann nach Erfahrung und Präferenz erfolgen; ein klarer Vorteil der All-inside-Technik ist nicht belegt.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/40762570/",
+   "ki": true,
+   "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "gon-s3",
+   "typ": "leitlinie",
+   "status": "Neu",
+   "datum": "2025-05",
+   "bereich": [
+    "endo",
+    "knie"
+   ],
+   "titel": "S3-Leitlinie Prävention und Therapie der Gonarthrose",
+   "quelle": "AWMF 187-050 · DGOU",
+   "kurz": "Ersetzt die bisherige konsensbasierte S2k-Leitlinie „Gonarthrose“ und hebt das Thema auf S3-Niveau.",
+   "praxis": "Intraartikuläre Kortikosteroide nur kurzfristig, z. B. zur Unterstützung physikalischer Therapie oder wenn andere Maßnahmen nicht möglich sind.",
+   "link": "https://register.awmf.org/de/leitlinien/detail/187-050",
+   "ki": true,
+   "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "of-s2k",
+   "typ": "leitlinie",
+   "status": "Neu",
+   "datum": "2025-04",
+   "bereich": [
+    "ws",
+    "alter"
+   ],
+   "titel": "S2k-Leitlinie Osteoporotische thorakolumbale Wirbelfrakturen",
+   "quelle": "AWMF 187-063 · DGOU & DWG (Pressemitteilung Okt. 2026)",
+   "kurz": "Erstmals strukturierte Empfehlungen zu Diagnostik und Therapie osteoporotischer Wirbelkörperfrakturen, aufbauend auf dem OF-Klassifikationssystem. Gültig bis 2030; im Oktober 2026 von der DGOU aktiv kommuniziert.",
+   "praxis": "Rückenschmerz im höheren Alter – besonders nach Sturz oder bei bekannter Osteoporose – immer abklären. Therapieentscheidung (konservativ vs. Augmentation/Stabilisierung) anhand OF-Typ; Osteoporose-Basistherapie mitdenken.",
+   "link": "https://register.awmf.org/de/leitlinien/detail/187-063",
+   "ki": true,
+   "quelleTyp": "kuratiert"
+  }
+ ]
+}
