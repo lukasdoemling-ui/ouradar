@@ -303,6 +303,76 @@ Antworte am Ende nur mit einem JSON-Array (leer, wenn nichts Neues):
   );
 }
 
+// ---------- AWMF-Register direkt (ohne KI) ----------
+// Register-Präfix = Fachgesellschaft: 187 DGOU, 012 DGU, 033 DGOOC (weitere hier ergänzen)
+const AWMF_SOCIETIES = (process.env.OURADAR_AWMF || "187,012,033").split(",").map(x => x.trim()).filter(Boolean);
+const AWMF_BEREICH = { "187": ["trauma"], "012": ["trauma"], "033": ["endo"] };
+const parseDe = d => { const m = String(d).match(/(\d{2})\.(\d{2})\.(\d{4})/); return m ? `${m[3]}-${m[2]}-${m[1]}` : ""; };
+
+export function parseAwmfList(html, soc) {
+  // HTML in Text umwandeln und Einträge der Form "187-051 … Titel … S2e … Stand: 01.01.2026 … Gültig bis: 31.12.2030" suchen
+  const text = html.replace(/<script[\s\S]*?<\/script>/gi, " ").replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, "\n").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&#39;/g, "'")
+    .split("\n").map(l => l.trim()).filter(Boolean);
+  const out = new Map();
+  const reNr = new RegExp("^(" + soc + "-\\d{3}[A-Z]?)$");
+  for (let i = 0; i < text.length; i++) {
+    const m = text[i].match(reNr);
+    if (!m) continue;
+    const nr = m[1];
+    let titel = "", klasse = "", stand = "", bis = "";
+    for (let j = i + 1; j < Math.min(i + 14, text.length); j++) {
+      const t = text[j];
+      if (reNr.test(t)) break;
+      if (!klasse && /^S(1|2k|2e|3)$/i.test(t)) { klasse = t; continue; }
+      if (/^Stand:?$/i.test(t) && text[j + 1]) { stand = parseDe(text[j + 1]); continue; }
+      if (/^Stand:/i.test(t)) { stand = parseDe(t); continue; }
+      if (/^G(ü|u)ltig bis:?$/i.test(t) && text[j + 1]) { bis = parseDe(text[j + 1]); continue; }
+      if (/^G(ü|u)ltig bis:/i.test(t)) { bis = parseDe(t); continue; }
+      if (!titel && t.length > 12 && !/^\d{2}\.\d{2}\.\d{4}$/.test(t) && !/^(Register-Nummer|Titel der Leitlinie|Klasse|Visitenkarte)/i.test(t)) titel = t;
+    }
+    if (titel && stand && !out.has(nr)) out.set(nr, { nr, titel, klasse, stand, bis });
+  }
+  return [...out.values()];
+}
+
+async function awmfRegister(feed, known, blocked) {
+  const prev = feed.awmfStand || {};          // Registernummer -> zuletzt gesehener Stand
+  const firstRun = !feed.awmfStand;
+  const next = { ...prev };
+  const added = [];
+  const cutoff = new Date(Date.now() - 365 * 864e5).toISOString().slice(0, 10);
+  for (const soc of AWMF_SOCIETIES) {
+    const url = `https://register.awmf.org/de/leitlinien/aktuelle-leitlinien/fachgesellschaft/${soc}`;
+    let list = [];
+    try {
+      const html = await getText(url);
+      list = parseAwmfList(html, soc);
+      log(`AWMF ${soc}: ${list.length} Leitlinien gelesen`);
+      if (!list.length) log("AWMF-Seite ohne erkennbare Liste. Anfang der Seite:", html.replace(/\s+/g, " ").slice(0, 400));
+    } catch (e) { log("AWMF", soc, "nicht erreichbar:", e.message); continue; }
+    for (const l of list) {
+      const changed = prev[l.nr] !== l.stand;
+      next[l.nr] = l.stand;
+      if (!changed) continue;
+      if (firstRun && l.stand < cutoff) continue;   // beim ersten Lauf nur Leitlinien der letzten 12 Monate
+      const id = `awmf-${l.nr}-${l.stand.slice(0, 7)}`;
+      if (known.has(id) || blocked.has(id)) continue;
+      const neu = !prev[l.nr] && !firstRun;
+      const fmt = d => d ? d.split("-").reverse().join(".") : "";
+      added.push({
+        id, typ: "leitlinie", status: `${neu ? "Neu" : "Aktualisiert"} · ${l.klasse || "AWMF"}`, datum: l.stand.slice(0, 7),
+        bereich: AWMF_BEREICH[soc] || [], titel: (l.klasse ? l.klasse + "-Leitlinie " : "") + l.titel,
+        quelle: `AWMF-Register ${l.nr}`,
+        kurz: `Im AWMF-Leitlinienregister ${neu ? "neu veröffentlicht" : "mit neuem Stand"}: ${fmt(l.stand)}${l.bis ? ", gültig bis " + fmt(l.bis) : ""}. Die Inhalte stehen in der Leitlinie selbst (Link).`,
+        praxis: "", link: `https://register.awmf.org/de/leitlinien/detail/${l.nr}`, ki: false, quelleTyp: "awmf-register"
+      });
+    }
+    await sleep(800);
+  }
+  return { added, awmfStand: next };
+}
+
 // ---------- Hauptablauf ----------
 const cleanBereich = b => (Array.isArray(b) ? b : []).filter(k => BEREICH_KEYS.includes(k));
 
@@ -355,7 +425,16 @@ export async function main() {
     added.push(base);
   }
 
-  // 2) AWMF (wöchentlich)
+  // 2a) AWMF-Register direkt (täglich, ohne KI)
+  let awmfStand = feed.awmfStand || null;
+  try {
+    const r = await awmfRegister(feed, new Set([...known, ...added.map(a => a.id)]), blocked);
+    added.push(...r.added);
+    if (Object.keys(r.awmfStand).length) awmfStand = r.awmfStand;
+    log(r.added.length, "neue/aktualisierte AWMF-Leitlinien");
+  } catch (e) { log("AWMF-Register übersprungen:", e.message); }
+
+  // 2b) AWMF per KI-Websuche (wöchentlich, nur mit Claude-Schlüssel)
   const lastAwmf = feed.lastAwmfCheck ? Date.parse(feed.lastAwmfCheck) : 0;
   let lastAwmfCheck = feed.lastAwmfCheck || null;
   if (API_KEY && Date.now() - lastAwmf > (AWMF_EVERY_DAYS - 0.5) * 864e5) {
@@ -378,13 +457,17 @@ export async function main() {
     } catch (e) { log("AWMF übersprungen:", e.message); }
   }
 
-  const all = [...added, ...items]
+  // ältere Einträge derselben AWMF-Leitlinie ausblenden, wenn ein neuer Stand dazukommt
+  const awmfNeu = new Set(added.filter(a => a.quelleTyp === "awmf-register").map(a => a.id.replace(/-\d{4}-\d{2}$/, "")));
+  const itemsOhneAlt = items.filter(i => !(i.quelleTyp === "awmf-register" && awmfNeu.has(i.id.replace(/-\d{4}-\d{2}$/, ""))));
+  const all = [...added, ...itemsOhneAlt]
     .sort((a, b) => (b.datum || "").localeCompare(a.datum || ""))
     .slice(0, MAX_ITEMS);
   const out = {
     version: 1,
     generated: new Date().toISOString(),
     lastAwmfCheck,
+    awmfStand,
     hinweis: "KI-erstellte Zusammenfassungen (ki: true) sind nicht ärztlich geprüft. Maßgeblich ist die verlinkte Originalquelle. Publikationsdaten: PubMed®/NLM.",
     items: all
   };
