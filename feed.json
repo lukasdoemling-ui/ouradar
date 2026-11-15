@@ -1,9 +1,229 @@
 {
  "version": 1,
- "generated": "2026-11-15T17:14:54.900Z",
+ "generated": "2026-11-15T17:56:40.735Z",
  "lastAwmfCheck": null,
  "hinweis": "KI-erstellte Zusammenfassungen (ki: true) sind nicht ärztlich geprüft. Maßgeblich ist die verlinkte Originalquelle. Publikationsdaten: PubMed®/NLM.",
  "items": [
+  {
+   "id": "pm42998057",
+   "typ": "studie",
+   "status": "RCT · Physiother Res Int",
+   "datum": "2027-01",
+   "bereich": [
+    "ws",
+    "alter",
+    "trauma"
+   ],
+   "titel": "Strukturiertes Training bei osteoporotischen Wirbelfrakturen: Eine randomisierte kontrollierte Studie",
+   "quelle": "Salkin et al., Physiother Res Int 2027 · PMID 42998057",
+   "kurz": "Diese monozentrische, unverblindete RCT prüfte bei 48 Personen (44 abgeschlossen) mit osteoporotischen Wirbelfrakturen ein 12-wöchiges, zweimal wöchentlich supervidiertes Trainingsprogramm im Vergleich zu gewohnten Aktivitäten. Die Trainingsgruppe erzielte signifikante Verbesserungen bei VAS-Schmerz (-1,24; 95%-KI -1,59 bis -0,89; p < 0,05), 6-Minuten-Gehstrecke (+38,94 m; 95%-KI 29,59 bis 48,28; p < 0,05) sowie bei Beeinträchtigung (ODI: -2,63), Depression (BDS: -4,52), Kinesiophobie (TKS: -10,81) und Lebensqualität (QUALEFFO-41; alle p < 0,05). Bei Schlafqualität (PSQI; p = 0,057) und Tagesschläfrigkeit (ESS; p = 0,210) zeigten sich keine signifikanten Unterschiede.",
+   "praxis": "Ein angeleitetes, progredientes Kräftigungs- und Gleichgewichtstraining könnte die Rehabilitation bei osteoporotischen Wirbelfrakturen unterstützen, wobei die Ergebnisse aufgrund der kleinen Fallzahl sowie des unverblindeten, monozentrischen Studiendesigns zurückhaltend zu bewerten sind.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42998057/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "The Effect of Exercise Training on Individuals With Osteoporotic Vertebral Fracture: A Randomized Controlled Trial."
+  },
+  {
+   "id": "pm42708792",
+   "typ": "studie",
+   "status": "Meta-Analyse · Pak J Pharm Sci",
+   "datum": "2026-12",
+   "bereich": [
+    "endo",
+    "schulter"
+   ],
+   "titel": "Perioperative Entzündungshemmer nach Hüft- und Schulterendoprothetik: Metaanalyse",
+   "quelle": "Ling et al., Pak J Pharm Sci 2026 · PMID 42708792",
+   "kurz": "Die Metaanalyse aus neun randomisierten kontrollierten Studien (800 Erwachsene, 2020–2026) bewertete perioperative antiinflammatorische Strategien bei Hüft- und Schulterendoprothesen. Antiinflammatorische Interventionen reduzierten postoperative CRP- (WMD -32,18) und IL-6-Spiegel (WMD -31,25) sowie Ruhe- (WMD -0,41) und Belastungsschmerzen (WMD -0,56; jeweils p < 0,001) signifikant. Zudem verringerte sich die Krankenhausverweildauer (WMD -0,54; p = 0,006), wobei die zugrunde liegenden Daten begrenzt und klinisch heterogen waren.",
+   "praxis": "Wegen der begrenzten und klinisch heterogenen Evidenz erlauben die Ergebnisse keine Ableitung konkreter Empfehlungen zu Wirkstoffklasse, Dosis, Applikationsweg oder Zeitpunkt.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42708792/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Anti-inflammatory agents after hip and shoulder arthroplasty: A systematic review and meta-analysis."
+  },
+  {
+   "id": "pm43033273",
+   "typ": "studie",
+   "status": "Meta-Analyse · Eur J Orthop Surg Traumatol",
+   "datum": "2026-11",
+   "bereich": [
+    "trauma",
+    "knie"
+   ],
+   "titel": "Hoffa-Frakturen: Zusätzliche Abstützplatte ohne klaren klinischen Vorteil",
+   "quelle": "Khadilkar et al., Eur J Orthop Surg Traumatol 2026 · PMID 43033273",
+   "kurz": "Diese Meta-Analyse aus vier nicht-randomisierten Studien mit 143 Erwachsenen verglich bei Hoffa-Frakturen eine zusätzliche Abstützplatte mit Kompressionsschrauben (n = 63) gegen alleinige Kompressionsschrauben (n = 80). Unter zusätzlicher Platte war die Kniebeweglichkeit nach vier Monaten zwar um 10,85° größer (95%-KI 1,69–20,02; p = 0,04), jedoch dauerte der Eingriff im Mittel 23,03 Minuten länger (95%-KI 7,45–38,62; p = 0,02). Bei der Beweglichkeit ab zwölf Monaten, funktionellen Scores, Blutverlust und Knochenheilungszeit fanden sich keine signifikanten Unterschiede, wobei drei Studien ein schwerwiegendes und eine ein moderates Verzerrungsrisiko aufwiesen.",
+   "praxis": "Wegen der begrenzten Evidenz aus kleinen Beobachtungsstudien mit erheblichem Verzerrungsrisiko sollte die Wahl der Osteosynthese individuell anhand der Frakturmerkmale und der intraoperativen Stabilität getroffen werden.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43033273/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Buttress plate augmentation offers no clear clinical advantage over compression screws alone for Hoffa fractures: a systematic review and meta-analysis."
+  },
+  {
+   "id": "pm43002254",
+   "typ": "leitlinie",
+   "status": "Leitlinie · Calcif Tissue Int",
+   "datum": "2026-11",
+   "bereich": [
+    "ws",
+    "alter",
+    "trauma"
+   ],
+   "titel": "Internationales Versorgungsmodell bei fragilitätsbedingten Wirbelkörperfrakturen",
+   "quelle": "Giangregorio et al., Calcif Tissue Int 2026 · PMID 43002254",
+   "kurz": "Das Fragility Fracture Network (FFN) entwickelte ein international anwendbares Versorgungsmodell für Menschen mit fragilitätsbedingten Wirbelkörperfrakturen. Basierend auf bestehenden nationalen Leitlinien, einem Delphi-Konsensus und einer Umfrage unter Fachleuten aus 40 Ländern entstand ein multidisziplinäres Konzept mit definierten Qualitätsindikatoren. Es bündelt Empfehlungen in drei Bereichen: multimodales Schmerzmanagement, Funktionsverbesserung (mit Frühmobilisation, Kraft-, Balance- und Ausdauertraining der Rückenstrecker) sowie Sturz- und Frakturprävention inklusive Ernährungsevaluation, Vitamin-D- und Kalziumoptimierung sowie Einleitung einer Osteoporosemedikation.",
+   "praxis": "Das Rahmenmodell bietet eine strukturierte Orientierung für eine koordinierte, interdisziplinäre Versorgungskette, wobei im Abstract keine eigenen klinischen Studiendaten zur Wirksamkeit nach Umsetzung vorliegen.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43002254/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "International Model to Inform the Care of Individuals with a Vertebral Fragility Fracture."
+  },
+  {
+   "id": "pm42427231",
+   "typ": "studie",
+   "status": "RCT · Clin J Pain",
+   "datum": "2026-11",
+   "bereich": [
+    "trauma"
+   ],
+   "titel": "PENG- vs. Femoralisblockade zur präoperativen Analgesie bei Hüftfraktur",
+   "quelle": "Liu et al., Clin J Pain 2026 · PMID 42427231",
+   "kurz": "In dieser randomisierten kontrollierten Studie mit 60 Patientinnen und Patienten mit Hüftfraktur wurden der präoperative Pericapsular-Nerve-Group-(PENG-)Block und die Femoralisblockade (FNB) verglichen. Nach 30 Minuten lagen die VAS-Schmerzwerte in der PENG-Gruppe in Ruhe (0,0 vs. 1,1; p = 0,020) und bei passiver Bewegung (2,9 vs. 3,4; p = 0,027) signifikant niedriger, waren nach 12 Stunden jedoch höher als nach FNB (Ruhe: 3,0 vs. 2,3; p = 0,006; Bewegung: 6,8 vs. 4,9; p = 0,002). Trotz schnellerer optimaler Ultraschalldarstellung benötigte die PENG-Gruppe früher erstmals und insgesamt mehr Bedarfsanalgetika über 24 Stunden (jeweils p < 0,001).",
+   "praxis": "Angesichts der kleinen Fallzahl (n = 60) weisen die Ergebnisse vorsichtig darauf hin, dass der PENG-Block zwar schneller darstellbar ist und initial besser schmerzlindernd wirkt, aufgrund einer kürzeren Blockdauer im Vergleich zur Femoralisblockade aber einen höheren Bedarf an Bedarfsanalgetika nach sich ziehen kann.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42427231/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Pericapsular Nerve Group Block Versus Femoral Nerve Block for Analgesia in Newly Admitted Patients With Hip Fractures: A Randomized Controlled Trial."
+  },
+  {
+   "id": "pm41275510",
+   "typ": "studie",
+   "status": "Meta-Analyse · Nutr Rev",
+   "datum": "2026-11",
+   "bereich": [
+    "trauma",
+    "alter"
+   ],
+   "titel": "Meta-Analyse: Höheres Hüftfrakturrisiko bei vegetarischer und veganer Ernährung",
+   "quelle": "Ballarin et al., Nutr Rev 2026 · PMID 41275510",
+   "kurz": "Diese systematische Übersichtsarbeit mit Meta-Analyse aus vier Kohortenstudien (n = 529.672 Erwachsene) untersuchte den Einfluss einer vegetarischen oder veganen Kost auf das Hüftfrakturrisiko im Vergleich zu fleischhaltiger Ernährung. Nach Adjustierung für Störfaktoren zeigten sowohl Vegetarier (n = 38.433; HR 1,25; 95%-KI 1,11–1,39; niedrige Evidenzqualität) als auch Veganer (n = 5.344; HR 1,75; 95%-KI 1,17–2,63; sehr niedrige Evidenzqualität) ein erhöhtes Risiko für Hüftfrakturen.",
+   "praxis": "Aufgrund der nur niedrigen bis sehr niedrigen Evidenzqualität ist die Aussagekraft eingeschränkt, dennoch sollten Behandelnde bei pflanzenbasierter Ernährung auf eine Beratung zur ausreichenden Nährstoffzufuhr für die Knochengesundheit achten.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41275510/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Vegetarian and Vegan Diets and the Risk of Hip Fracture in Adults: A Systematic Review and Meta-analysis."
+  },
+  {
+   "id": "pm42988394",
+   "typ": "studie",
+   "status": "RCT · Zhongguo Gu Shang",
+   "datum": "2026-10",
+   "bereich": [
+    "trauma",
+    "alter"
+   ],
+   "titel": "TEAS plus Fascia-iliaca-Block zur präoperativen Analgesie bei intertrochantärer Femurfraktur",
+   "quelle": "Zhao et al., Zhongguo Gu Shang 2026 · PMID 42988394",
+   "kurz": "Diese randomisierte kontrollierte Studie untersuchte bei 90 älteren Patienten (65–85 Jahre; in Gruppen zu 28, 29 und 28 Patienten beschrieben) mit intertrochantärer Femurfraktur die präoperative Analgesie mittels transkutaner elektrischer Akupunkturpunktstimulation (TEAS) plus Fascia-iliaca-Kompartmentblock (FICB) im Vergleich zu alleinigem FICB und konventioneller Therapie. Nach 24 und 48 Stunden erreichte die Kombination signifikant niedrigere Ruheschmerzwerte (NRS nach 48 Stunden: 2,68±0,55 vs. 3,10±0,56 bzw. 4,68±0,72; p<0,05), geringere Bewegungsschmerzen sowie einen niedrigeren 48-Stunden-Tramadolverbrauch (94,65±39,30 mg vs. 124,14±25,43 mg bzw. 183,93±33,48 mg; p<0,05). Zudem wurde in der Kombinationsgruppe nach 48 Stunden seltener Übelkeit dokumentiert (1 vs. 4 bzw. 7 Patienten; p<0,05), während sich beim Erbrechen kein signifikanter Unterschied zeigte.",
+   "praxis": "Aufgrund der kleinen Gruppengrößen, fehlender Abstract-Angaben zu Verblindung sowie zum genauen TEAS- und Standardanalgesieprotokoll sowie einer rechnerischen Differenz zwischen 90 eingeschlossenen und 85 in den Gruppen aufgeführten Patienten ist die klinische Übertragbarkeit der zusätzlichen TEAS-Anwendung derzeit noch zurückhaltend zu bewerten.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42988394/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "[Transcutaneous electrical acupoint stimulation combined with fascia iliaca compartment block for preoperative analgesia in elderly patients with intertrochanteric femoral fractures]."
+  },
+  {
+   "id": "pm42858264",
+   "typ": "studie",
+   "status": "RCT · Immunopharmacol Immunotoxicol",
+   "datum": "2026-10",
+   "bereich": [
+    "endo",
+    "knie",
+    "infekt"
+   ],
+   "titel": "Antibiotikahaltiger Knochenzement bei unikondylärer Knieprothese: Entzündung und Infektrate",
+   "quelle": "Zhang et al., Immunopharmacol Immunotoxicol 2026 · PMID 42858264",
+   "kurz": "Diese prospektive randomisierte kontrollierte Studie untersuchte bei 104 Arthrose-Patienten vor unikondylärer Knieendoprothese den Effekt von Knochenzement mit 1,0 g Vancomycin-Hydrochlorid (n = 52) im Vergleich zu Zement ohne Antibiotikum (n = 52). In der Antibiotika-Gruppe zeigten sich niedrigere Entzündungsmarker (CRP 3,52 vs. 6,92; ESR 16,29 vs. 20,19; TNF-α 29,71 vs. 36,25; IL-6 17,05 vs. 22,05; alle p < 0,001) sowie eine geringere postoperative Infektionsrate (p = 0,016) und ein höherer HSS-Score (p < 0,001). Die genauen absoluten Infektionsraten sowie die exakte zeitliche Zuordnung der Laborwerte zwischen Tag 7 und Monat 3 sind im Abstract nicht näher aufgeschlüsselt.",
+   "praxis": "Aufgrund der moderaten Fallzahl dieser Einzelstudie und fehlender absoluter Zahlen zu Infektionen und Funktionsscores im Abstract liefert die Arbeit Hinweise auf einen möglichen Nutzen von vancomycinhaltigem Zement, reicht allein jedoch nicht für eine generelle Empfehlung zur Routineanwendung aus.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42858264/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Application of antibiotic-loaded bone cement in unicompartmental knee arthroplasty: inhibiting IL-6 levels and reducing postoperative infection rate."
+  },
+  {
+   "id": "pm42712049",
+   "typ": "studie",
+   "status": "Meta-Analyse · Res Nurs Health",
+   "datum": "2026-09",
+   "bereich": [
+    "trauma",
+    "alter"
+   ],
+   "titel": "Interprofessionelle Zusammenarbeit bei Hüftfrakturen im Alter: Metaanalyse von 12 RCTs",
+   "quelle": "Tonapa et al., Res Nurs Health 2026 · PMID 42712049",
+   "kurz": "Diese systematische Übersichtsarbeit mit Metaanalyse von 12 randomisierten kontrollierten Studien untersuchte strukturierte interprofessionelle Behandlungskonzepte (u. a. Pflege, Geriatrie, Orthopädie und Physiotherapie) bei älteren Patientinnen und Patienten mit Hüftfraktur. Die Zusammenarbeit war mit einer im Mittel um 2,26 Tage kürzeren Verweildauer sowie Verbesserungen im Barthel-Index um 4,86 Punkte nach sechs und 3,92 Punkte nach zwölf Monaten verbunden. Für die Lebensqualität zeigte sich ein geringer, in der Sensitivitätsanalyse nicht robuster Effekt (Hedges' G = 0,194), während die Befunde zur Klinik- und 6-Monats-Mortalität bei sehr niedriger bis niedriger Evidenzsicherheit (GRADE) nicht eindeutig waren.",
+   "praxis": "Trotz der insgesamt sehr niedrigen bis niedrigen Evidenzsicherheit und fehlender Belege für einen Überlebensvorteil kann die Einführung interprofessioneller Hüftfraktur-Pfade (mit Teamvisiten, Frühmobilisation, Medikationsabgleich und Entlassungsplanung) erwogen werden, um die funktionelle Erholung zu fördern und die Liegedauer zu verkürzen.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42712049/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Effects of Interprofessional Collaborative Practice in Older Adults' Hip Fractures Care: A Systematic Review and Meta-Analysis of Randomized Controlled Trials."
+  },
+  {
+   "id": "pm42704968",
+   "typ": "studie",
+   "status": "RCT · Bone",
+   "datum": "2026-09",
+   "bereich": [
+    "alter",
+    "trauma"
+   ],
+   "titel": "Vitamin-D3-Gabe zur Frakturprävention bei älteren Erwachsenen ohne Schutzeffekt",
+   "quelle": "Rikkonen et al., Bone 2026 · PMID 42704968",
+   "kurz": "In dieser randomisierten kontrollierten Studie mit 2.495 Teilnehmenden in Finnland (Männer ≥ 60, Frauen ≥ 65 Jahre) wurde über fünf Jahre der Einfluss von täglich 1.600 IE oder 3.200 IE Vitamin D3 gegenüber Placebo auf das Frakturrisiko untersucht. Weder während der im Mittel 4,1-jährigen Einnahmephase noch über das 7,3-jährige Follow-up senkte Vitamin D3 die Frakturrate unter 1.600 IE/Tag (73 bzw. 139 Frakturen; HR 1,52 bzw. 1,40) oder 3.200 IE/Tag (52 bzw. 111 Frakturen; HR 1,07 bzw. 1,08) im Vergleich zu Placebo (49 bzw. 104 Frakturen). In einer Subkohorte (n = 550) zeigte sich mit durchschnittlich 74,8 nmol/l bereits zu Studienbeginn eine überwiegend ausreichende Versorgung mit 25-Hydroxyvitamin D.",
+   "praxis": "Bei überwiegend ausreichend mit Vitamin D versorgten älteren Menschen stützen die Ergebnisse den Einsatz höherer Vitamin-D3-Dosen zur Frakturprävention nicht.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42704968/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "The effect of vitamin D3 supplementation on fracture incidence in an aging population - The Finnish vitamin D trial."
+  },
+  {
+   "id": "pm42704073",
+   "typ": "studie",
+   "status": "Meta-Analyse · J Invest Surg",
+   "datum": "2026-09",
+   "bereich": [
+    "endo",
+    "knie",
+    "schulter",
+    "infekt"
+   ],
+   "titel": "Vorherige Arthroskopie und Infektionsrisiko nach Endoprothetik",
+   "quelle": "Liu et al., J Invest Surg 2026 · PMID 42704073",
+   "kurz": "Diese Meta-Analyse aus 31 Beobachtungsstudien untersuchte, ob eine vorangegangene Arthroskopie das postoperative Infektionsrisiko nach Knie-, Hüft- und Schulterendoprothetik beeinflusst. Insgesamt stieg das Risiko sowohl für Gesamtinfektionen (OR 1,33; 95%-KI 1,14–1,56) als auch für tiefe Infektionen (OR 1,38; 95%-KI 1,17–1,63) bei einer gepoolten Inzidenz von jeweils 2 % signifikant an, zeigte jedoch deutliche Unterschiede zwischen den Gelenken. Während frühere Arthroskopien am Knie mit erhöhten Infektionsrisiken und an der Schulter mit einem deutlich erhöhten Risiko für tiefe Infektionen assoziiert waren, fand sich an der Hüfte kein signifikanter Zusammenhang.",
+   "praxis": "Das gelenkspezifische Infektionsrisiko sollte bei der Therapieplanung beachtet werden, wobei die Evidenz bislang auf Beobachtungsstudien mit deutlicher Heterogenität beruht und insbesondere für das Schultergelenk noch durch weitere Studien bestätigt werden muss.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42704073/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Joint-Specific Effects of Previous Arthroscopic Surgery on the Risk of Infection Following Knee, Hip, and Shoulder Arthroplasty: A Meta-Analysis Based on Observational Studies."
+  },
+  {
+   "id": "pm42596767",
+   "typ": "studie",
+   "status": "Meta-Analyse · Br J Clin Pharmacol",
+   "datum": "2026-08",
+   "bereich": [
+    "trauma",
+    "alter"
+   ],
+   "titel": "Anticholinerge Medikamentenlast und Mortalität nach Hüftfraktur bei Älteren",
+   "quelle": "Valcuende-Rosique et al., Br J Clin Pharmacol 2026 · PMID 42596767",
+   "kurz": "Eine Meta-Analyse von fünf Kohortenstudien mit 65.435 Patientinnen und Patienten ab 65 Jahren untersuchte den Zusammenhang zwischen anticholinerger Medikation und Gesamtmortalität nach Hüftfraktur. Eine hohe anticholinerge Belastung ging insgesamt mit einem um 40 % höheren Sterberisiko einher (HR 1,40; 95-%-KI 1,22–1,61; p < 0,001), was sich nach 12 Monaten (HR 1,47; 95-%-KI 1,11–1,94) und 36 Monaten (HR 1,45; 95-%-KI 1,05–2,00) zeigte, nicht aber nach 1 bis 6 Monaten. Die Heterogenität zwischen den Studien war hoch und die Evidenzsicherheit niedrig bis sehr niedrig.",
+   "praxis": "Die Autorinnen und Autoren regen an, die anticholinerge Belastung im perioperativen geriatrischen Management routinemäßig zu prüfen und zu verringern, wobei die Aussagekraft durch hohe Heterogenität und niedrige bis sehr niedrige Evidenzsicherheit eingeschränkt ist.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42596767/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Higher anticholinergic burden is associated with increased medium- and long-term mortality following hip fracture: A systematic review and meta-analysis."
+  },
   {
    "id": "epcat3",
    "typ": "studie",
@@ -20,6 +240,43 @@
    "link": "https://www.aerzteblatt.de/news/endoprothetik-bei-niedrigem-thromboserisiko-reicht-eine-vte-prophylaxe-mit-ass-d570b803-194b-42f7-b01c-bf918e08c93e",
    "ki": true,
    "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "pm42480043",
+   "typ": "studie",
+   "status": "RCT · Libyan J Med",
+   "datum": "2026-07",
+   "bereich": [
+    "ws",
+    "alter",
+    "trauma"
+   ],
+   "titel": "Osteoporotische Wirbelkörperfrakturen: Vertebroplastie mit vs. ohne Pedikelschraubenfixation",
+   "quelle": "Ma et al., Libyan J Med 2026 · PMID 42480043",
+   "kurz": "Eine randomisierte kontrollierte Studie mit 94 älteren Patienten (je 47 pro Gruppe) verglich bei osteoporotischen Wirbelkörperkompressionsfrakturen die alleinige perkutane Vertebroplastie (PVP) mit der Kombination aus PVP und minimalinvasiver Pedikelschraubenfixation. Bei längerer Operationszeit erreichte die Kombinationsgruppe signifikant bessere Ergebnisse bei Schmerz (VAS nach 1, 3 und 7 Tagen), Wirbelkörperhöhe, Cobb-Winkel, Funktion (ADL, JOA, ODI nach 3 Monaten) und Entzündungsmarkern sowie einen geringeren Blutverlust und eine kürzere Verweildauer (alle p < 0,05). Die Komplikationsraten unterschieden sich nicht signifikant (p > 0,05), wobei der Abstract keine absoluten Effektwerte nennt.",
+   "praxis": "Die zusätzliche minimalinvasive Stabilisierung könnte bei älteren Patienten radiologische und funktionelle Ergebnisse verbessern, doch erlauben die moderate Fallzahl, fehlende Effektstärken im Abstract und die kurze Nachbeobachtung von drei Monaten nur eine zurückhaltende Bewertung.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42480043/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Comparative efficacy of percutaneous vertebroplasty combined with minimally invasive pedicle screw fixation versus percutaneous vertebroplasty alone in the treatment of elderly osteoporotic vertebral compression fractures."
+  },
+  {
+   "id": "pm42600233",
+   "typ": "studie",
+   "status": "Meta-Analyse · Int J Nurs Stud",
+   "datum": "2026-07",
+   "bereich": [
+    "trauma",
+    "alter"
+   ],
+   "titel": "Frühmobilisation innerhalb von 24–48 h nach Hüftfraktur-OP: Ergebnisse einer Meta-Analyse",
+   "quelle": "Ma et al., Int J Nurs Stud 2026 · PMID 42600233",
+   "kurz": "Diese Meta-Analyse aus 26 Studien mit 297.435 älteren Patientinnen und Patienten untersuchte den Effekt einer Mobilisation innerhalb von 24 bis 48 Stunden gegenüber einer verzögerten oder üblichen Mobilisation nach Hüftfrakturoperation. Die frühe Mobilisation ging mit einer signifikant geringeren 30-Tage-Mortalität (RR 0,40; 95-%-KI 0,25–0,64), einer reduzierten 1-Jahres-Mortalität (RR 0,57; 95-%-KI 0,40–0,80) und weniger postoperativen Komplikationen (RR 0,79; 95-%-KI 0,74–0,84) einher. Zudem waren funktionelle Unabhängigkeit und Entlassungen nach Hause häufiger sowie die Liegedauer kürzer, während sich bei den Wiederaufnahmeraten kein signifikanter Unterschied zeigte.",
+   "praxis": "Die Ergebnisse stützen bestehende Empfehlungen für standardisierte Frühmobilisationsprotokolle nach Hüftfraktur-OP, sollten aufgrund der Studienheterogenität und überwiegend beobachtender Studiendesigns jedoch vorsichtig interpretiert werden.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42600233/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Early mobilization within 24 to 48 h improves postoperative clinical outcomes in older adults with hip fracture: A systematic review and meta-analysis."
   },
   {
    "id": "aaos-ankle",
@@ -71,6 +328,42 @@
    "quelleTyp": "kuratiert"
   },
   {
+   "id": "pm42386456",
+   "typ": "studie",
+   "status": "Meta-Analyse · Foot Ankle Surg",
+   "datum": "2026-06",
+   "bereich": [
+    "trauma",
+    "fuss"
+   ],
+   "titel": "Frühe vs. verzögerte Belastung nach Osteosynthese am Sprunggelenk",
+   "quelle": "Rigney et al., Foot Ankle Surg 2026 · PMID 42386456",
+   "kurz": "Diese Meta-Analyse aus sechs randomisierten kontrollierten Studien (1.190 Patientinnen und Patienten) verglich eine frühe Belastung (≤2 Wochen) mit einer Entlastung (≥6 Wochen) nach operativer Versorgung von Sprunggelenksfrakturen. Unter früher Belastung zeigten sich signifikant bessere Werte im Olerud-Molander Ankle Score nach 6 Wochen (MD 6,63; 95%-KI 4,66–8,60; p < 0,0001) und 3 Monaten (MD 3,70; 95%-KI 1,57–5,82; p = 0,0007) sowie im EuroQol-5D nach 6 Wochen (MD 6,62; 95%-KI 3,71–9,54; p < 0,0001). Über 6 Monate hinaus blieben die Unterschiede nicht bestehen, und die Komplikationsraten waren in beiden Gruppen vergleichbar.",
+   "praxis": "Bei entsprechend ausgewählten Patientinnen und Patienten mit stabiler Osteosynthese und ausreichender Knochenqualität unterstützen diese Evidenz-Level-1a-Daten eine frühe Belastung zur Beschleunigung der kurzfristigen funktionellen Erholung ohne erhöhtes Komplikationsrisiko.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42386456/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Weightbearing after ankle fracture fixation; A systematic review and meta-analysis of randomised controlled trials, a modern perspective."
+  },
+  {
+   "id": "pm42268729",
+   "typ": "studie",
+   "status": "RCT · Ann Med",
+   "datum": "2026-06",
+   "bereich": [
+    "trauma",
+    "fuss"
+   ],
+   "titel": "Lachgas-Analgesie bei postoperativer Reha nach Sprunggelenksfraktur",
+   "quelle": "Qiu et al., Ann Med 2026 · PMID 42268729",
+   "kurz": "Eine monozentrische, doppelblinde RCT (n = 100) untersuchte bei Patientinnen und Patienten mit akuten Schmerzen (Score ≥ 4) während der postoperativen Rehabilitation nach Sprunggelenksfraktur die Gabe von 65 % Lachgas im Vergleich zu 100 % Sauerstoff. Die Schmerzwerte waren unter Lachgas signifikant niedriger (T1: mediane Differenz −3,0 [95%-KI −3,4 bis −2,6]; T2: −2,0 [95%-KI −2,8 bis −1,2]; jeweils p < 0,001), während sich die Angstwerte nicht signifikant unterschieden (p = 0,31). Zufriedenheit und Akzeptanz lagen in der Lachgas-Gruppe höher (p < 0,001), und schwere Nebenwirkungen traten in keiner Gruppe auf.",
+   "praxis": "Vorgemischtes Lachgas könnte eine verträgliche Option zur Schmerzreduktion in der Rehabilitation nach Sprunggelenksfrakturen darstellen, wobei die Aussagekraft durch das monozentrische Studiendesign (n = 100) und die fehlende direkte Vergleichsgruppe mit Standardanalgetika eingeschränkt ist.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42268729/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Analgesic effect of premixed nitrous oxide in postoperative rehabilitation for ankle fractures: a randomized controlled trial."
+  },
+  {
    "id": "aaos-rc",
    "typ": "leitlinie",
    "status": "Neu (international)",
@@ -105,6 +398,59 @@
    "quelleTyp": "kuratiert"
   },
   {
+   "id": "pm42080480",
+   "typ": "studie",
+   "status": "Meta-Analyse · Ann Med",
+   "datum": "2026-05",
+   "bereich": [
+    "trauma"
+   ],
+   "titel": "Photobiomodulation bei Frakturen: Kurzfristige Effekte auf Schmerz und Funktion",
+   "quelle": "Wang et al., Ann Med 2026 · PMID 42080480",
+   "kurz": "Diese systematische Übersichtsarbeit mit Metaanalyse schloss 12 beziehungsweise 9 randomisierte kontrollierte Studien (Suche bis August 2025) ein, um die Wirksamkeit der Photobiomodulation (PBM) auf Schmerz, Funktion und Knochenheilung bei Frakturen zu prüfen. Im Vergleich zu Placebo verringerte PBM den Schmerzscore nach einer Woche (MD -0,74; 95-%-KI -1,00 bis -0,47; p < 0,0001; I² = 0 %) und steigerte bei Frakturen der oberen Extremität die Griffkraft nach vier Wochen stärker (MD 5,03; 95-%-KI 4,29 bis 5,78; p < 0,0001; I² = 0 %). Zwischen Woche 4 und 26 ergaben sich dagegen keine signifikanten Unterschiede mehr bei Schmerz und Funktion sowie insgesamt kein Unterschied in der Knochenheilung; Nebenwirkungen wurden nicht berichtet.",
+   "praxis": "PBM könnte kurzfristig Schmerzen nach Frakturen lindern und die frühe Griffkraft an der oberen Extremität unterstützen, ein langfristiger Nutzen oder Effekt auf die Knochenheilung ist bei uneinheitlicher Evidenz und bislang ungeklärten Therapieparametern jedoch nicht belegt.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42080480/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Effect of photobiomodulation on pain relief and functional improvement in fractures: a systematic review and meta-analysis."
+  },
+  {
+   "id": "pm42124368",
+   "typ": "studie",
+   "status": "Meta-Analyse · Obes Rev",
+   "datum": "2026-05",
+   "bereich": [
+    "endo",
+    "knie"
+   ],
+   "titel": "Präoperativer Gewichtsverlust vor Hüft- und Knie-TEP ohne Kurzzeitvorteil",
+   "quelle": "Gill et al., Obes Rev 2026 · PMID 42124368",
+   "kurz": "Diese systematische Übersichtsarbeit mit Meta-Analyse aus 21 Studien untersuchte, ob ein Gewichtsverlust vor Knie- oder Hüftendoprothetik bei einem BMI über 30 kg/m² die Komplikationsrate innerhalb von 90 Tagen senkt. Eine vorherige Gewichtsabnahme ging dabei mit einem erhöhten Risiko für Revisionsoperationen einher (OR 1,37 [1,01–1,84]; p = 0,04). Das Risiko für tiefe Beinvenenthrombosen, Lungenembolien sowie oberflächliche oder tiefe Wundinfektionen blieb unverändert.",
+   "praxis": "Laut der vorliegenden Analyse verbessert eine präoperative Gewichtsabnahme bei Adipositas das kurzfristige postoperative Ergebnis nicht, wobei für belastbare Leitlinienempfehlungen noch große, gut konzipierte prospektive Studien erforderlich sind.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42124368/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Associations Between Weight Loss Prior to Knee and Hip Arthroplasty and Peri- and Post-Operative Outcomes: A Systematic Review and Meta-Analysis."
+  },
+  {
+   "id": "pm42109245",
+   "typ": "studie",
+   "status": "Meta-Analyse · J Invest Surg",
+   "datum": "2026-05",
+   "bereich": [
+    "endo",
+    "trauma"
+   ],
+   "titel": "PENG+LFCN vs. FICB bei Hüftoperationen: Metaanalyse zu Schmerz und Erholung",
+   "quelle": "Li et al., J Invest Surg 2026 · PMID 42109245",
+   "kurz": "Eine Metaanalyse von 16 Vergleichsstudien untersuchte die Kombination aus Pericapsular-Nerve-Group- und Lateral-Femoral-Cutaneous-Nerve-Block (PENG+LFCN) gegenüber dem Fascia-iliaca-Kompartmentblock (FICB) bei Hüfteingriffen in ERAS-Pfaden. Unter PENG+LFCN zeigten sich geringere Ruhe- und Belastungsschmerzen auf der VAS (MD -0,54 bzw. -0,98; jeweils p < 0,00001), ein niedrigerer Morphinbedarf (MD -24,22 mg; p = 0,001) sowie weniger postoperative Muskelschwächen (OR 0,10; p = 0,0001). Zudem waren die Zeit bis zur ersten Mobilisation (MD -9,22 h; p < 0,0001) und die Verweildauer (MD -0,75 Tage; p < 0,00001) verkürzt.",
+   "praxis": "PENG+LFCN könnte bei Hüftoperationen innerhalb von ERAS-Konzepten eine vorteilhaftere Regionalanalgesie als der FICB darstellen, wobei im Abstract Angaben zu den eingeschlossenen Studientypen, zur Gesamtpatientenzahl und zur Heterogenität fehlen.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42109245/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Meta-Analysis of PENG+LFCN versus FICB on ERAS-Related Outcomes: Postoperative Pain, Motor Function and Recovery in Hip Surgery."
+  },
+  {
    "id": "metahip",
    "typ": "studie",
    "status": "RCT · Acta Orthop",
@@ -119,6 +465,24 @@
    "link": "https://actaorthop.org/actao/article/download/44754/53456/185445",
    "ki": true,
    "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "pm41991400",
+   "typ": "studie",
+   "status": "RCT · Pain Manag Nurs",
+   "datum": "2026-04",
+   "bereich": [
+    "endo",
+    "knie"
+   ],
+   "titel": "VR-Entspannungsübungen reduzieren Schmerzen und Kinesiophobie nach Knie-TEP",
+   "quelle": "Menteş et al., Pain Manag Nurs 2026 · PMID 41991400",
+   "kurz": "Diese randomisierte kontrollierte Studie untersuchte den Effekt Virtual-Reality-(VR)-basierter progressiver Entspannungsübungen auf Schmerzen und Kinesiophobie nach primärer Knieendoprothetik. Eingeschlossen wurden 80 Personen (40 Interventions-, 40 Kontrollgruppe), die an den postoperativen Tagen 1 bis 3 eine Bewegungsschiene (CPM) und in der Interventionsgruppe zusätzlich VR-Übungen erhielten. Bei Vergleichbarkeit der Ausgangsmerkmale mit Ausnahme des Body-Mass-Index zeigten sich in der VR-Gruppe an allen drei Tagen signifikant niedrigere VAS-Schmerzwerte und Tampa-Kinesiophobie-Scores als in der Kontrollgruppe (jeweils p < 0,001; keine Absolutwerte im Abstract berichtet).",
+   "praxis": "Begleitende VR-Entspannungsübungen während der frühen CPM-Therapie nach Knie-TEP könnten Schmerzen und Bewegungsangst mindern, wobei die Aussagekraft durch die begrenzte Fallzahl (n = 80), das monozentrische Design und fehlende Effektgrößen im Abstract eingeschränkt ist.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41991400/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Effect of Virtual Reality-Based Relaxation Exercise on Postoperative Pain and Kinesiophobia."
   },
   {
    "id": "fri-s2k",
@@ -172,6 +536,26 @@
    "quelleTyp": "kuratiert"
   },
   {
+   "id": "pm41865808",
+   "typ": "studie",
+   "status": "Meta-Analyse · J Arthroplasty",
+   "datum": "2026-03",
+   "bereich": [
+    "endo",
+    "infekt",
+    "knie",
+    "trauma"
+   ],
+   "titel": "Asymptomatische Bakteriurie und Infektionsrisiko bei Hüft- und Knieendoprothesen",
+   "quelle": "Roy et al., J Arthroplasty 2026 · PMID 41865808",
+   "kurz": "Die Metaanalyse aus 14 Kohortenstudien (48.562 Gelenke) und zwei randomisierten kontrollierten Studien (1.065 Gelenke) untersuchte das Risiko periprothetischer Gelenkinfektionen bei asymptomatischer Bakteriurie (ASB) nach Hüft- und Knieendoprothetik. Gepoolt zeigte sich bei ASB eine erhöhte Wahrscheinlichkeit für Gelenkinfektionen (Odds Ratio 2,41; 95-%-KI 1,20–4,83; p = 0,02), während Subgruppenanalysen nach Eingriffsart, Nachbeobachtungszeit sowie bei Fraktur-Hemiarthroplastiken keinen signifikanten Zusammenhang ergaben. Eine antibiotische Behandlung der ASB zeigte in der elektiven Endoprothetik keinen protektiven Effekt.",
+   "praxis": "Die Daten sprechen gegen ein routinemäßiges präoperatives Urinscreening und eine Antibiotikatherapie bei ASB, wobei die Subgruppenanalysen laut den Autoren statistisch unterpowert waren.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41865808/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Asymptomatic Bacteriuria and Periprosthetic Joint Infection Risk: A Systematic Review and Meta-Analysis."
+  },
+  {
    "id": "frailty-s3",
    "typ": "leitlinie",
    "status": "Neu",
@@ -204,6 +588,42 @@
    "link": "https://new.aaos.org/aaosnow/2026/feb/research/research02/",
    "ki": true,
    "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "pm41508374",
+   "typ": "studie",
+   "status": "Meta-Analyse · Ann Med",
+   "datum": "2026-01",
+   "bereich": [
+    "trauma",
+    "ws"
+   ],
+   "titel": "Atopische Dermatitis: Erhöhtes Risiko für Osteoporose und Frakturen",
+   "quelle": "Liu et al., Ann Med 2026 · PMID 41508374",
+   "kurz": "Eine Metaanalyse von zehn Kohortenstudien mit jeweils 368 bis über zwei Millionen Erkrankten untersuchte das Osteoporose- und Frakturrisiko bei atopischer Dermatitis (AD). Bei AD zeigte sich ein um 56 % erhöhtes Risiko für Osteoporose (OR 1,56; 95-%-KI 1,14–2,13) sowie ein um 8 % erhöhtes Gesamtfrakturrisiko (OR 1,08; 95-%-KI 1,05–1,10), wobei das Frakturrisiko mit dem Schweregrad der Erkrankung zunahm. Signifikant erhöht waren insbesondere Wirbelkörperfrakturen (OR 1,14; 95-%-KI 1,08–1,20) und Frakturen der unteren Extremität (OR 1,11; 95-%-KI 1,08–1,13), allerdings bestand zwischen den zugrunde liegenden Studien eine erhebliche Heterogenität (I² 65,0–99,9 %).",
+   "praxis": "Bei Patientinnen und Patienten mit moderater bis schwerer atopischer Dermatitis sollte an mögliche Skelettkomplikationen gedacht und eine gezielte Kontrolle der Knochengesundheit erwogen werden, auch wenn die Ergebnisse auf Beobachtungsstudien mit teils hoher Heterogenität beruhen.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41508374/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Atopic dermatitis and the risk of osteoporosis and fractures: a meta-analysis of cohort studies."
+  },
+  {
+   "id": "pm41496457",
+   "typ": "studie",
+   "status": "Meta-Analyse · Ann Med",
+   "datum": "2026-01",
+   "bereich": [
+    "alter",
+    "trauma"
+   ],
+   "titel": "Anämie und Osteoporose: Systematische Übersicht und Meta-Analyse",
+   "quelle": "Tear et al., Ann Med 2026 · PMID 41496457",
+   "kurz": "Diese Meta-Analyse untersuchte anhand von 18 Studien mit insgesamt 861.540 Teilnehmenden den Zusammenhang zwischen Anämie und Osteoporose. Bei allerdings hoher Heterogenität (I² = 92,7 %) war eine Anämie sowohl in der univariaten Auswertung (OR 1,62; 95 %-KI 1,33–1,98; p < 0,001) als auch in multivariaten Analysen (OR 2,01; 95 %-KI 1,26–3,21; p = 0,004) signifikant mit einem erhöhten Osteoporoserisiko assoziiert. Sensitivitätsanalysen bestätigten die Robustheit dieses Zusammenhangs.",
+   "praxis": "Unter Berücksichtigung der hohen Studienheterogenität sprechen die Ergebnisse laut Autorenteam für ein gezieltes Osteoporose-Screening bei Menschen mit Anämie sowie für weitere Untersuchungen zur Integration der Anämie in Werkzeuge zur Osteoporose- und Frakturrisikovorhersage.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41496457/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Association between anaemia and osteoporosis: a systematic review and meta-analysis."
   },
   {
    "id": "vte-s3",
@@ -271,6 +691,42 @@
    "link": "https://pubmed.ncbi.nlm.nih.gov/40762570/",
    "ki": true,
    "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "pm41467767",
+   "typ": "studie",
+   "status": "Meta-Analyse · Ann Med",
+   "datum": "2025-12",
+   "bereich": [
+    "trauma"
+   ],
+   "titel": "KI-gestützte Frakturerkennung im Röntgenbild: Meta-Analyse zur ärztlichen Diagnostik",
+   "quelle": "Qin et al., Ann Med 2026 · PMID 41467767",
+   "kurz": "Eine systematische Übersichtsarbeit mit Meta-Analyse (26 Studien) prüfte, ob künstliche Intelligenz (KI) die ärztliche Frakturerkennung auf Röntgenaufnahmen verbessert. Mit KI-Unterstützung stieg die gepoolte Sensitivität von 77 % (95-%-KI: 72–81) auf 87 % (95-%-KI: 83–90), die Spezifität von 88 % (95-%-KI: 85–90) auf 92 % (95-%-KI: 89–94) und der AUC-Wert von 0,90 (95-%-KI: 0,87–0,92) auf 0,95 (95-%-KI: 0,93–0,97). Acht Studien zeigten ein hohes Verzerrungsrisiko, und die Heterogenität hing unter anderem von Frakturlokalisation, KI-Modelltyp und Referenzstandards ab.",
+   "praxis": "Bei der Röntgendiagnostik von Extremitäten- und Rumpffrakturen kann eine KI-Unterstützung die ärztliche Treffsicherheit erhöhen, wobei die Aussagekraft durch das hohe Verzerrungsrisiko in acht Studien und die bestehende Heterogenität eingeschränkt bleibt.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41467767/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Enhanced fracture detection on radiographs with AI assistance for clinicians: a systematic review and meta-analysis."
+  },
+  {
+   "id": "pm41424145",
+   "typ": "studie",
+   "status": "Meta-Analyse · Ann Med",
+   "datum": "2025-12",
+   "bereich": [
+    "trauma",
+    "alter",
+    "ws"
+   ],
+   "titel": "Einfluss der COVID-19-Pandemie auf die Inzidenz osteoporotischer Frakturen",
+   "quelle": "Tang et al., Ann Med 2026 · PMID 41424145",
+   "kurz": "Diese Meta-Analyse aus neun Beobachtungs- bzw. retrospektiven Studien verglich die Inzidenz osteoporotischer Frakturen im Pandemiejahr 2020 mit 2019. Insgesamt nahmen osteoporotische Frakturen (RR = 0,85; 95%-KI 0,80–0,91; p < 0,0001) und Unterarmfrakturen (RR = 0,87; 95%-KI 0,79–0,96; p = 0,002) signifikant ab. Global blieben jedoch Hüftfrakturen (RR = 0,93; 95%-KI 0,76–1,15; p = 0,14) und Wirbelkörperfrakturen (RR = 1,35; 95%-KI 0,85–2,15; p = 0,20) statistisch unverändert, wobei Hüftfrakturen in Europa stabil waren (RR = 0,92; 95%-KI 0,81–1,04; p = 0,17) und nur in Südamerika signifikant sanken (RR = 0,79; p = 0,0004).",
+   "praxis": "Auf Basis der neun eingeschlossenen Beobachtungs- und retrospektiven Studien deutet sich an, dass während der Pandemie zwar weniger Unterarmfrakturen auftraten, das Aufkommen klinisch schwerwiegender Hüft- und Wirbelkörperfrakturen in Europa jedoch unverändert blieb.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41424145/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "The impact of the COVID-19 pandemic on osteoporotic fractures: a systematic review and meta-analysis."
   },
   {
    "id": "gon-s3",
