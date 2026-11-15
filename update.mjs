@@ -3,7 +3,9 @@
 // neue/aktualisierte AWMF-Leitlinien, lässt sie per KI auf Deutsch zusammenfassen
 // und schreibt alles nach docs/feed.json. Die App lädt diese Datei.
 //
-// Benötigt: Node 20+, Umgebungsvariable ANTHROPIC_API_KEY (als GitHub-Secret).
+// Benötigt: Node 20+ und EINEN KI-Schlüssel als GitHub-Secret:
+//   GEMINI_API_KEY    (kostenlos über Google AI Studio)  – wird bevorzugt
+//   ANTHROPIC_API_KEY (Claude, kostenpflichtig)           – Alternative
 // Ohne Schlüssel läuft das Script trotzdem – dann ohne Zusammenfassungen.
 
 import { readFile, writeFile } from "node:fs/promises";
@@ -11,9 +13,13 @@ import { readFile, writeFile } from "node:fs/promises";
 const FEED_FILE = "docs/feed.json";
 const BLOCK_FILE = "docs/blocked.json";
 const API_KEY = process.env.ANTHROPIC_API_KEY || "";
+const GEMINI_KEY = process.env.GEMINI_API_KEY || "";
+// Kostenlose Gemini-Modelle (Free Tier), in dieser Reihenfolge probiert:
+const GEMINI_MODELS = (process.env.OURADAR_GEMINI_MODELS || "gemini-4-hydrogen,gemini-2.5-flash,gemini-2.5-flash-lite").split(",").map(s => s.trim()).filter(Boolean);
+const HAS_AI = !!(GEMINI_KEY || API_KEY);
 const MODEL_SUMMARY = process.env.OURADAR_MODEL_SUMMARY || "claude-haiku-5-5";
 const MODEL_SEARCH = process.env.OURADAR_MODEL_SEARCH || "claude-sonnet-5-5";
-const MAX_NEW_PER_RUN = 30;      // Kostenbremse: höchstens so viele neue Studien pro Lauf
+const MAX_NEW_PER_RUN = 25;      // Kostenbremse: höchstens so viele neue Studien pro Lauf
 const MAX_ITEMS = 400;           // so viele Einträge bleiben im Feed
 const DAYS_BACK = 21;            // Suchfenster PubMed
 const AWMF_EVERY_DAYS = 7;       // AWMF-Suche nur wöchentlich
@@ -121,6 +127,49 @@ async function claude(body, tries = 3) {
   }
   throw new Error("Claude-API nicht erreichbar");
 }
+// ---------- Google Gemini (kostenloser Zugang) ----------
+let geminiModelIdx = 0;
+async function gemini(prompt, { search = false, json = true } = {}) {
+  for (let attempt = 0; attempt < 6; attempt++) {
+    const model = GEMINI_MODELS[Math.min(geminiModelIdx, GEMINI_MODELS.length - 1)];
+    const body = { contents: [{ role: "user", parts: [{ text: prompt }] }], generationConfig: { temperature: 0.2 } };
+    if (search) body.tools = [{ google_search: {} }];
+    else if (json) body.generationConfig.responseMimeType = "application/json";
+    const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
+      method: "POST", headers: { "content-type": "application/json", "x-goog-api-key": GEMINI_KEY }, body: JSON.stringify(body)
+    });
+    if (r.ok) {
+      const j = await r.json();
+      const parts = j.candidates?.[0]?.content?.parts || [];
+      return parts.map(p => p.text || "").join("\n");
+    }
+    const t = await r.text();
+    log("Gemini", model, r.status, t.slice(0, 160));
+    const modelProblem = r.status === 404 || ((r.status === 400 || r.status === 403) && /model|not (found|supported)|free tier|billing/i.test(t));
+    if (modelProblem && geminiModelIdx < GEMINI_MODELS.length - 1) { geminiModelIdx++; continue; } // Modell nicht verfügbar -> nächstes
+    if (r.status === 429 || r.status >= 500) { await sleep(20000 * (attempt + 1)); continue; }       // Limit erreicht -> warten
+    throw new Error("Gemini " + r.status);
+  }
+  throw new Error("Gemini nicht erreichbar (Limit?)");
+}
+
+// Einheitlicher Zugang: Gemini (kostenlos) bevorzugt, sonst Claude
+async function llm(prompt, { search = false, open = "{" } = {}) {
+  if (GEMINI_KEY && !API_KEY && search) {
+    // Google verbietet, Ergebnisse der Google-Suche (Grounding) zu speichern/weiterzuverbreiten -> AWMF-Suche nur mit Claude
+    throw new Error("AWMF-Suche benötigt ANTHROPIC_API_KEY");
+  }
+  if (GEMINI_KEY && !search) {
+    const out = await gemini(prompt, { search: false });
+    await sleep(Number(process.env.OURADAR_SLEEP ?? 7000)); // Free Tier: wenige Anfragen pro Minute
+    return extractJson(out, open);
+  }
+  const res = await claude(search
+    ? { model: MODEL_SEARCH, max_tokens: 4000, messages: [{ role: "user", content: prompt }], tools: [{ type: "web_search_20250305", name: "web_search", max_uses: 8 }] }
+    : { model: MODEL_SUMMARY, max_tokens: 900, messages: [{ role: "user", content: prompt }] });
+  return extractJson(textOf(res), open);
+}
+
 const textOf = res => (res.content || []).filter(b => b.type === "text").map(b => b.text).join("\n");
 function extractJson(s, open = "{") {
   const close = open === "{" ? "}" : "]";
@@ -153,8 +202,7 @@ Antworte nur mit JSON:
  "kurz": "2–3 Sätze: Fragestellung, Design/Fallzahl, Hauptergebnis mit Zahlen aus dem Abstract",
  "praxis": "1 Satz: Was bedeutet das für die Praxis? Vorsichtig; bei schwacher Evidenz sagen",
  "bereich": ["trauma"|"alter"|"endo"|"fuss"|"knie"|"schulter"|"ws"|"kinder"|"infekt", ...]}`;
-  const res = await claude({ model: MODEL_SUMMARY, max_tokens: 900, messages: [{ role: "user", content: prompt }] });
-  return extractJson(textOf(res));
+  return await llm(prompt);
 }
 
 async function awmfNew(knownLL) {
@@ -171,12 +219,7 @@ Antworte am Ende nur mit einem JSON-Array (leer, wenn nichts Neues):
   "kurz":"2–3 Sätze: Worum geht es, was ist neu/zentral",
   "praxis":"1 Satz: Was ändert sich für die Praxis (nur wenn in Quellen erkennbar, sonst 'Details in der Leitlinie')",
   "bereich":["trauma"|"alter"|"endo"|"fuss"|"knie"|"schulter"|"ws"|"kinder"|"infekt"]}]`;
-  const res = await claude({
-    model: MODEL_SEARCH, max_tokens: 4000,
-    messages: [{ role: "user", content: prompt }],
-    tools: [{ type: "web_search_20250305", name: "web_search", max_uses: 8 }]
-  });
-  const arr = extractJson(textOf(res), "[");
+  const arr = await llm(prompt, { search: true, open: "[" });
   return (Array.isArray(arr) ? arr : []).filter(x =>
     x && /^\d{3}-\d{3}[A-Z]?$/.test(x.registernummer || "") && x.titel && /^\d{4}-\d{2}$/.test(x.stand || "")
   );
@@ -206,7 +249,7 @@ export async function main() {
       quelle: `${a.first ? a.first + " et al., " : ""}${a.journal} ${a.y} · PMID ${a.pmid}`,
       kurz: "", praxis: "", link: `https://pubmed.ncbi.nlm.nih.gov/${a.pmid}/`, ki: false, quelleTyp: "pubmed"
     };
-    if (API_KEY && a.abstract) {
+    if (HAS_AI && a.abstract) {
       try {
         const s = await summarizeStudy(a);
         if (s.relevant === false) { log("nicht relevant:", a.pmid); blocked.add(id); continue; }
@@ -222,7 +265,7 @@ export async function main() {
   // 2) AWMF (wöchentlich)
   const lastAwmf = feed.lastAwmfCheck ? Date.parse(feed.lastAwmfCheck) : 0;
   let lastAwmfCheck = feed.lastAwmfCheck || null;
-  if (API_KEY && Date.now() - lastAwmf > (AWMF_EVERY_DAYS - 0.5) * 864e5) {
+  if (HAS_AI && Date.now() - lastAwmf > (AWMF_EVERY_DAYS - 0.5) * 864e5) {
     log("AWMF-Suche …");
     try {
       const knownLL = new Set(items.filter(i => i.quelleTyp === "awmf").map(i => i.id.replace(/^awmf-/, "")));
