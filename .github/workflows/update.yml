@@ -23,6 +23,7 @@ jobs:
           node-version: 20
       - name: Neue Studien und Leitlinien holen und zusammenfassen
         env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           mkdir -p docs
@@ -37,4 +38,3 @@ jobs:
           git add feed.json blocked.json
           git diff --cached --quiet || git commit -m "Feed-Update $(date -u +%Y-%m-%d)"
           git push
-
