@@ -2,7 +2,7 @@ name: Feed aktualisieren
 
 on:
   schedule:
-    - cron: "17 4 * * *"   # täglich ca. 05:17 / 06:17 Uhr deutscher Zeit
+    - cron: "17 3 * * *"   # täglich ca. 04:17 / 05:17 Uhr deutscher Zeit
   workflow_dispatch: {}     # zusätzlich manuell startbar ("Run workflow")
 
 permissions:
@@ -15,16 +15,58 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 120
+    env:
+      MODEL_FILE: Qwen2.5-7B-Instruct-Q4_K_M.gguf
+      MODEL_URL: https://huggingface.co/bartowski/Qwen2.5-7B-Instruct-GGUF/resolve/main/Qwen2.5-7B-Instruct-Q4_K_M.gguf
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+
+      # ---- Freies KI-Modell (Qwen2.5-7B, Apache 2.0) – wird zwischengespeichert ----
+      - name: KI-Modell aus dem Zwischenspeicher holen
+        id: modelcache
+        uses: actions/cache@v4
+        with:
+          path: models
+          key: model-${{ env.MODEL_FILE }}
+      - name: KI-Modell herunterladen (nur beim ersten Mal)
+        if: steps.modelcache.outputs.cache-hit != 'true'
+        continue-on-error: true
+        run: |
+          mkdir -p models
+          curl -L --fail --retry 3 -o "models/$MODEL_FILE" "$MODEL_URL"
+      - name: KI-Programm (llama.cpp) herunterladen und starten
+        id: llm
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          test -f "models/$MODEL_FILE" || { echo "Modell fehlt"; exit 1; }
+          TAG=$(gh release view -R ggml-org/llama.cpp --json tagName -q .tagName)
+          echo "llama.cpp $TAG"
+          mkdir -p llama && cd llama
+          curl -L --fail -o llama.tar.gz "https://github.com/ggml-org/llama.cpp/releases/download/${TAG}/llama-${TAG}-bin-ubuntu-x64.tar.gz"
+          tar xzf llama.tar.gz
+          SERVER=$(find . -name llama-server -type f | head -1)
+          chmod +x "$SERVER"
+          export LD_LIBRARY_PATH="$(dirname "$SERVER"):$LD_LIBRARY_PATH"
+          nohup "$SERVER" -m "../models/$MODEL_FILE" -c 6144 -t $(nproc) --host 127.0.0.1 --port 8080 > ../llama.log 2>&1 &
+          for i in $(seq 1 120); do
+            if curl -s -o /dev/null -w "%{http_code}" http://127.0.0.1:8080/health | grep -q 200; then echo "KI bereit"; echo "url=http://127.0.0.1:8080" >> "$GITHUB_OUTPUT"; exit 0; fi
+            sleep 5
+          done
+          echo "KI startet nicht"; tail -20 ../llama.log; exit 1
+
+      # ---- Feed bauen ----
       - name: Neue Studien und Leitlinien holen und zusammenfassen
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LOCAL_LLM_URL: ${{ steps.llm.outputs.url }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Nur zum eigenen Testen als Rückfall (Google erlaubt den kostenlosen Zugang nicht für Apps mit Nutzern in der EU):
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           mkdir -p docs
           cp feed.json blocked.json docs/
