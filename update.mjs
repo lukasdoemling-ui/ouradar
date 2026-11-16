@@ -21,7 +21,12 @@ let LOCAL_OK = false;
 const HAS_AI = () => !!(API_KEY || LOCAL_OK || GEMINI_KEY);
 const MODEL_SUMMARY = process.env.OURADAR_MODEL_SUMMARY || "claude-haiku-5-5";
 const MODEL_SEARCH = process.env.OURADAR_MODEL_SEARCH || "claude-sonnet-5-5";
-const MAX_NEW_PER_RUN = 25;      // Kostenbremse: höchstens so viele neue Studien pro Lauf
+const MAX_NEW_PER_RUN = 25;
+const START = Date.now();
+const BUDGET_MIN = Number(process.env.OURADAR_BUDGET_MIN || 70);   // danach keine KI-Zusammenfassungen mehr in diesem Lauf
+const MAX_AI_LOCAL = Number(process.env.OURADAR_MAX_AI || 8);       // freies Modell: höchstens so viele Zusammenfassungen pro Lauf
+const SUMMARY_TYPES = /^(RCT|Meta-Analyse|Syst\. Review|Leitlinie)$/i; // nur hochwertige Studientypen werden zusammengefasst
+const minutes = () => (Date.now() - START) / 60000;      // Kostenbremse: höchstens so viele neue Studien pro Lauf
 const MAX_ITEMS = 400;           // so viele Einträge bleiben im Feed
 const DAYS_BACK = 21;            // Suchfenster PubMed
 const AWMF_EVERY_DAYS = 7;       // AWMF-Suche nur wöchentlich
@@ -386,11 +391,21 @@ export async function main() {
   LOCAL_OK = await localHealth();
   log("KI:", API_KEY ? "Claude" : LOCAL_OK ? "freies Modell (lokal)" : GEMINI_KEY ? "Gemini" : "keine – nur Titel/Links");
 
-  // 1) PubMed
+  // 1) zuerst (schnell, ohne KI): AWMF-Register direkt (täglich, ohne KI)
+  let awmfStand = feed.awmfStand || null;
+  try {
+    const r = await awmfRegister(feed, known, blocked);
+    added.push(...r.added);
+    if (Object.keys(r.awmfStand).length) awmfStand = r.awmfStand;
+    log(r.added.length, "neue/aktualisierte AWMF-Leitlinien");
+  } catch (e) { log("AWMF-Register übersprungen:", e.message); }
+
+  // 2) PubMed
   log("PubMed-Suche …");
   let studies = [];
   try { studies = await pubmedNew(known); } catch (e) { log("PubMed übersprungen:", e.message); }
   log(studies.length, "neue Publikationen gefunden");
+  let aiCount = 0;
   for (const a of studies) {
     const id = "pm" + a.pmid;
     if (blocked.has(id)) continue;
@@ -400,7 +415,13 @@ export async function main() {
       quelle: `${a.first ? a.first + " et al., " : ""}${a.journal} ${a.y} · PMID ${a.pmid}`,
       kurz: "", praxis: "", link: `https://pubmed.ncbi.nlm.nih.gov/${a.pmid}/`, ki: false, quelleTyp: "pubmed"
     };
-    if (HAS_AI() && a.abstract) {
+    const wantAI = HAS_AI() && a.abstract && SUMMARY_TYPES.test(a.st);
+    if (wantAI && (minutes() > BUDGET_MIN || (!API_KEY && LOCAL_OK && aiCount >= MAX_AI_LOCAL))) {
+      log("Zeit-/Mengenbudget erreicht – Rest folgt im nächsten Lauf:", a.pmid);
+      continue;   // nicht speichern, damit die Studie beim nächsten Lauf zusammengefasst wird
+    }
+    if (wantAI) {
+      aiCount++;
       try {
         const s = await summarizeStudy(a);
         if (s.relevant === false) { log("nicht relevant:", a.pmid); blocked.add(id); continue; }
@@ -421,18 +442,10 @@ export async function main() {
         });
         if (s.praxisLabel && base.praxis) base.praxisLabel = s.praxisLabel;
       } catch (e) { log("Zusammenfassung fehlgeschlagen", a.pmid, e.message); }
+      log(`KI ${aiCount} fertig nach ${minutes().toFixed(1)} min`);
     }
     added.push(base);
   }
-
-  // 2a) AWMF-Register direkt (täglich, ohne KI)
-  let awmfStand = feed.awmfStand || null;
-  try {
-    const r = await awmfRegister(feed, new Set([...known, ...added.map(a => a.id)]), blocked);
-    added.push(...r.added);
-    if (Object.keys(r.awmfStand).length) awmfStand = r.awmfStand;
-    log(r.added.length, "neue/aktualisierte AWMF-Leitlinien");
-  } catch (e) { log("AWMF-Register übersprungen:", e.message); }
 
   // 2b) AWMF per KI-Websuche (wöchentlich, nur mit Claude-Schlüssel)
   const lastAwmf = feed.lastAwmfCheck ? Date.parse(feed.lastAwmfCheck) : 0;
