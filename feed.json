@@ -1,9 +1,27 @@
 {
  "version": 1,
- "generated": "2026-11-15T17:56:40.735Z",
+ "generated": "2026-11-16T08:55:34.582Z",
  "lastAwmfCheck": null,
+ "awmfStand": null,
  "hinweis": "KI-erstellte Zusammenfassungen (ki: true) sind nicht ärztlich geprüft. Maßgeblich ist die verlinkte Originalquelle. Publikationsdaten: PubMed®/NLM.",
  "items": [
+  {
+   "id": "pm42924980",
+   "typ": "studie",
+   "status": "RCT · Pak J Pharm Sci",
+   "datum": "2027-01",
+   "bereich": [
+    "trauma"
+   ],
+   "titel": "Studie zur Wirksamkeit und Sicherheit eines topischen Diclofenac-Epolamin-Pflasters zur Beschleunigung der Rehabilitation bei moderater Hamstring-Zerrung: Eine randomisierte kontrollierte Studie.",
+   "quelle": "Niu et al., Pak J Pharm Sci 2027 · PMID 42924980",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42924980/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Efficacy and safety study of diclofenac epolamine topical patch in accelerating rehabilitation of moderate hamstring strain: A randomized controlled trial."
+  },
   {
    "id": "pm42998057",
    "typ": "studie",
@@ -40,6 +58,58 @@
    "ki": true,
    "quelleTyp": "pubmed",
    "originaltitel": "Anti-inflammatory agents after hip and shoulder arthroplasty: A systematic review and meta-analysis."
+  },
+  {
+   "id": "pm43024366",
+   "typ": "studie",
+   "status": "Meta-Analyse · J Med Internet Res",
+   "datum": "2026-11",
+   "bereich": [
+    "endo",
+    "knie"
+   ],
+   "titel": "Wirksamkeit digitaler Gesundheitsinterventionen auf Rehabilitationsergebnisse bei Patienten nach Knie-Totalendoprothetik: Systematischer Review und Netzwerk-Metaanalyse.",
+   "quelle": "Zhang et al., J Med Internet Res 2026 · PMID 43024366",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43024366/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Effectiveness of Digital Health Interventions on Rehabilitation Outcomes in Patients After Total Knee Arthroplasty: Systematic Review and Network Meta-Analysis."
+  },
+  {
+   "id": "pm42999027",
+   "typ": "studie",
+   "status": "RCT · Med Sci Monit",
+   "datum": "2026-11",
+   "bereich": [
+    "knie"
+   ],
+   "titel": "Eine klinische und experimentelle Pilotstudie zur Implantation einer Typ-I-Kollagenmatrix im Vergleich zur Mikrofrakturierung bei Knorpeldefekten des Knies.",
+   "quelle": "Zhu et al., Med Sci Monit 2026 · PMID 42999027",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42999027/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "A Pilot Clinical and Experimental Study of Type I Collagen Matrix Implantation Versus Microfracture for Knee Cartilage Defects."
+  },
+  {
+   "id": "pm43009963",
+   "typ": "studie",
+   "status": "RCT · J Orthop Surg Res",
+   "datum": "2026-11",
+   "bereich": [
+    "schulter"
+   ],
+   "titel": "Einfluss einer frühen versus verzögerten Mobilisation nach arthroskopischer Rotatorenmanschettenrekonstruktion bei kleinen und mittelgroßen Rissen: eine prospektive randomisierte Studie.",
+   "quelle": "Abdallah et al., J Orthop Surg Res 2026 · PMID 43009963",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43009963/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Impact of early versus delayed mobilization after arthroscopic rotator cuff repair in small and medium-sized tears: a prospective randomized study."
   },
   {
    "id": "pm43033273",
@@ -151,6 +221,55 @@
    "originaltitel": "Application of antibiotic-loaded bone cement in unicompartmental knee arthroplasty: inhibiting IL-6 levels and reducing postoperative infection rate."
   },
   {
+   "id": "pm42730713",
+   "typ": "studie",
+   "status": "RCT · J Int Soc Sports Nutr",
+   "datum": "2026-09",
+   "bereich": [
+    "knie"
+   ],
+   "titel": "Could creatine supplementation combined with physical rehabilitation accelerate return to play in athletes with patellar tendinopathy?",
+   "quelle": "Sánchez-Gómez et al., J Int Soc Sports Nutr 2026 · PMID 42730713",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42730713/",
+   "ki": false,
+   "quelleTyp": "pubmed"
+  },
+  {
+   "id": "pm42777489",
+   "typ": "studie",
+   "status": "RCT · Clin Biomech (Bristol)",
+   "datum": "2026-09",
+   "bereich": [
+    "knie"
+   ],
+   "titel": "Charakterisierung von Genauigkeit, Retention und Dosis-Wirkungs-Beziehung eines 18 Sitzungen umfassenden Echtzeit-Gang-Biofeedback-Programms nach Rekonstruktion des vorderen Kreuzbandes.",
+   "quelle": "Lemus et al., Clin Biomech (Bristol) 2026 · PMID 42777489",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42777489/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Characterizing accuracy, retention, and dose-response of an 18-session real-time gait biofeedback program following anterior cruciate ligament reconstruction."
+  },
+  {
+   "id": "pm42804936",
+   "typ": "studie",
+   "status": "RCT · Injury",
+   "datum": "2026-09",
+   "bereich": [
+    "schulter"
+   ],
+   "titel": "Locked plate fixation versus non-operative management for three and four-part proximal humeral fractures in elderly; A randomized controlled trial.",
+   "quelle": "Abouelsoud et al., Injury 2026 · PMID 42804936",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42804936/",
+   "ki": false,
+   "quelleTyp": "pubmed"
+  },
+  {
    "id": "pm42712049",
    "typ": "studie",
    "status": "Meta-Analyse · Res Nurs Health",
@@ -205,6 +324,40 @@
    "ki": true,
    "quelleTyp": "pubmed",
    "originaltitel": "Joint-Specific Effects of Previous Arthroscopic Surgery on the Risk of Infection Following Knee, Hip, and Shoulder Arthroplasty: A Meta-Analysis Based on Observational Studies."
+  },
+  {
+   "id": "pm42611193",
+   "typ": "studie",
+   "status": "Meta-Analyse · Skeletal Radiol",
+   "datum": "2026-08",
+   "bereich": [
+    "fuss"
+   ],
+   "titel": "Bildgebungsbasierte Prävalenz des Musculus peroneus quartus und sein Zusammenhang mit Peronealsehnenpathologien: eine systematische Übersichtsarbeit und Metaanalyse",
+   "quelle": "Madruga et al., Skeletal Radiol 2026 · PMID 42611193",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42611193/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Imaging-based prevalence of the peroneus quartus muscle and its association with peroneal tendon pathology: a systematic review and meta-analysis."
+  },
+  {
+   "id": "pm42612386",
+   "typ": "studie",
+   "status": "Meta-Analyse · Gait Posture",
+   "datum": "2026-08",
+   "bereich": [
+    "fuss"
+   ],
+   "titel": "Verletzungsrisiko im Zusammenhang mit dem Übergang zu minimalistischem Schuhwerk bei Läufern: Eine systematische Übersichtsarbeit und Meta-Analyse.",
+   "quelle": "Río et al., Gait Posture 2027 · PMID 42612386",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42612386/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Injury risk associated with the transition to minimalist footwear in runners: A systematic review and meta-analysis."
   },
   {
    "id": "pm42596767",
@@ -328,6 +481,41 @@
    "quelleTyp": "kuratiert"
   },
   {
+   "id": "pm42249596",
+   "typ": "studie",
+   "status": "Meta-Analyse · Sports Health",
+   "datum": "2026-06",
+   "bereich": [
+    "trauma",
+    "fuss"
+   ],
+   "titel": "Die Auswirkungen von visuellem Training auf das Gleichgewicht und die funktionelle Erholung nach Verletzungen der unteren Extremität: Eine systematische Übersichtsarbeit und Meta-Analyse.",
+   "quelle": "Liu et al., Sports Health 2026 · PMID 42249596",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42249596/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "The Effects of Visual Training on Balance and Functional Recovery After Lower Extremity Injuries: A Systematic Review and Meta-analysis."
+  },
+  {
+   "id": "pm42338183",
+   "typ": "studie",
+   "status": "RCT · Ann Med",
+   "datum": "2026-06",
+   "bereich": [
+    "schulter"
+   ],
+   "titel": "Einfluss verschiedener Konzentrationen von liposomalem Bupivacain bei ultraschallgeführter Blockade des Truncus superior auf die postoperative Analgesie und Mobilität: Studienprotokoll einer randomisierten, doppelblinden, kontrollierten Studie zur Schulterarthroskopie.",
+   "quelle": "Zhou et al., Ann Med 2026 · PMID 42338183",
+   "kurz": "Diese geplante randomisierte, doppelblinde, kontrollierte Studie mit 282 erwachsenen Patienten vor elektiver arthroskopischer Rotatorenmanschettenrekonstruktion untersucht verschiedene Konzentrationen von liposomalem Bupivacain bei einer ultraschallgeführten Blockade des Truncus superior hinsichtlich postoperativer Schmerzlinderung und Mobilität.",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42338183/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Effect of different liposomal bupivacaine concentrations in ultrasound-guided superior trunk block on postoperative analgesia and mobility: a randomized double-blind controlled trial protocol for shoulder arthroscopy."
+  },
+  {
    "id": "pm42386456",
    "typ": "studie",
    "status": "Meta-Analyse · Foot Ankle Surg",
@@ -396,6 +584,73 @@
    "link": "https://research.regionh.dk/da/publications/supervised-rehabilitation-comparable-to-single-advice-session-aft/",
    "ki": true,
    "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "pm42169443",
+   "typ": "studie",
+   "status": "Meta-Analyse · Am J Sports Med",
+   "datum": "2026-05",
+   "bereich": [
+    "knie"
+   ],
+   "titel": "Zusammenhang zwischen der Wahl des Autografts und dem Risiko einer kontralateralen Verletzung des vorderen Kreuzbands bei Patienten ≤25 Jahren: Eine systematische Übersichtsarbeit und Meta-Analyse.",
+   "quelle": "Petit et al., Am J Sports Med 2026 · PMID 42169443",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42169443/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Association Between Autograft Choice and Risk of Contralateral ACL Injury in Patients ≤25 Years of Age: A Systematic Review and Meta-analysis."
+  },
+  {
+   "id": "pm42116541",
+   "typ": "studie",
+   "status": "Meta-Analyse · Am J Sports Med",
+   "datum": "2026-05",
+   "bereich": [
+    "schulter"
+   ],
+   "titel": "Ein Vergleich der arthroskopischen Bankart-Reparatur und des Latarjet-Verfahrens bei Kontaktsportlern mit vorderer Schulterinstabilität: Eine systematische Übersichtsarbeit und Meta-Analyse.",
+   "quelle": "Peckston et al., Am J Sports Med 2026 · PMID 42116541",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42116541/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "A Comparison of Arthroscopic Bankart Repair and the Latarjet Procedure in Contact Athletes With Anterior Shoulder Instability: A Systematic Review and Meta-analysis."
+  },
+  {
+   "id": "pm42114824",
+   "typ": "studie",
+   "status": "RCT · J Sport Rehabil",
+   "datum": "2026-05",
+   "bereich": [
+    "knie"
+   ],
+   "titel": "Eine eng anliegende Knieorthese für junge Erwachsene mit einem symptomatischen Knie nach vorderer Kreuzbandrekonstruktion: Eine randomisierte kontrollierte Machbarkeitsstudie.",
+   "quelle": "Savage et al., J Sport Rehabil 2026 · PMID 42114824",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42114824/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "A Slim-Fit Knee Brace for Young Adults With a Symptomatic Knee Following Anterior Cruciate Ligament Reconstruction: A Feasibility Randomized Controlled Trial."
+  },
+  {
+   "id": "pm42177938",
+   "typ": "studie",
+   "status": "Meta-Analyse · J Shoulder Elbow Surg",
+   "datum": "2026-05",
+   "bereich": [
+    "schulter"
+   ],
+   "titel": "Subscapularis repair in reverse shoulder arthroplasty: a systematic review and meta-analysis with a sub-analysis by implant lateralization and repair techniques.",
+   "quelle": "Daher et al., J Shoulder Elbow Surg 2026 · PMID 42177938",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42177938/",
+   "ki": false,
+   "quelleTyp": "pubmed"
   },
   {
    "id": "pm42080480",
@@ -467,6 +722,23 @@
    "quelleTyp": "kuratiert"
   },
   {
+   "id": "pm41945463",
+   "typ": "studie",
+   "status": "Meta-Analyse · Ann Med",
+   "datum": "2026-04",
+   "bereich": [
+    "trauma"
+   ],
+   "titel": "Interventionskomponenten, Trainingsdosis und Adhärenz bei der übungsbasierten Prävention von Hamstring-Zerrungen im Fußball: eine systematische Übersichtsarbeit und Meta-Analyse.",
+   "quelle": "Gu et al., Ann Med 2026 · PMID 41945463",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41945463/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Intervention components, training dose, and adherence in exercise-based prevention of hamstring strain injury in football: a systematic review and meta-analysis."
+  },
+  {
    "id": "pm41991400",
    "typ": "studie",
    "status": "RCT · Pain Manag Nurs",
@@ -536,6 +808,40 @@
    "quelleTyp": "kuratiert"
   },
   {
+   "id": "pm41786257",
+   "typ": "studie",
+   "status": "RCT · J Arthroplasty",
+   "datum": "2026-03",
+   "bereich": [
+    "endo",
+    "knie"
+   ],
+   "titel": "Ein kombiniertes Multi-Routen-Regime aus mehreren niedrig dosierten intravenösen und periartikulären Dexamethason-Gaben verbessert perioperative Ergebnisse nach Knie-Totalendoprothese: Eine prospektive, doppelblinde, randomisierte kontrollierte Studie.",
+   "quelle": "Xia et al., J Arthroplasty 2026 · PMID 41786257",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41786257/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "A Combined Multi-Route Regimen of Multiple Low-Dose Intravenous and Periarticular Dexamethasone Improves Perioperative Outcomes After Total Knee Arthroplasty: A Prospective, Double-Blind, Randomized Controlled Trial."
+  },
+  {
+   "id": "pm41847834",
+   "typ": "studie",
+   "status": "RCT · J Neurotrauma",
+   "datum": "2026-03",
+   "bereich": [
+    "knie"
+   ],
+   "titel": "Sex Differences in the Treatment Effect of Targeted Heart Rate Aerobic Exercise in Adolescents with Acute Sport-Related Concussion.",
+   "quelle": "Castro et al., J Neurotrauma 2026 · PMID 41847834",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41847834/",
+   "ki": false,
+   "quelleTyp": "pubmed"
+  },
+  {
    "id": "pm41865808",
    "typ": "studie",
    "status": "Meta-Analyse · J Arthroplasty",
@@ -573,6 +879,58 @@
    "quelleTyp": "kuratiert"
   },
   {
+   "id": "pm41719009",
+   "typ": "studie",
+   "status": "Meta-Analyse · J Dance Med Sci",
+   "datum": "2026-02",
+   "bereich": [
+    "fuss"
+   ],
+   "titel": "Prävalenz, Inzidenz, Schweregrad und anatomische Lokalisation von Überlastungsverletzungen bei männlichen und weiblichen Balletttänzern: Eine systematische Übersichtsarbeit und Meta-Analyse.",
+   "quelle": "Rupendran et al., J Dance Med Sci 2026 · PMID 41719009",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41719009/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Prevalence, Incidence, Severity, and Anatomical Location of Overuse Injuries in Male and Female Ballet Dancers: A Systematic Review and Meta-Analysis."
+  },
+  {
+   "id": "pm41622914",
+   "typ": "studie",
+   "status": "Meta-Analyse · Ann R Coll Surg Engl",
+   "datum": "2026-02",
+   "bereich": [
+    "trauma",
+    "fuss",
+    "kinder"
+   ],
+   "titel": "Ergebnis von Sprunggelenksfrakturen bei Kindern: eine aktualisierte systematische Übersichtsarbeit und Meta-Analyse.",
+   "quelle": "Badhe et al., Ann R Coll Surg Engl 2026 · PMID 41622914",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41622914/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Outcome of ankle fractures in children: an updated systematic review and meta-analysis."
+  },
+  {
+   "id": "pm41769928",
+   "typ": "studie",
+   "status": "RCT · Ann Afr Med",
+   "datum": "2026-02",
+   "bereich": [
+    "knie"
+   ],
+   "titel": "Assessing the Outcomes of Anterior Cruciate Ligament Reconstruction with or without the use of Antibiotic Solution in Graft Preparation: A Randomized Control Trial.",
+   "quelle": "Gourab et al., Ann Afr Med 2026 · PMID 41769928",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41769928/",
+   "ki": false,
+   "quelleTyp": "pubmed"
+  },
+  {
    "id": "aaos-feb",
    "typ": "leitlinie",
    "status": "Aktualisiert (international)",
@@ -588,6 +946,56 @@
    "link": "https://new.aaos.org/aaosnow/2026/feb/research/research02/",
    "ki": true,
    "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "pm41614388",
+   "typ": "studie",
+   "status": "Meta-Analyse · Knee Surg Sports Traumatol Arthrosc",
+   "datum": "2026-01",
+   "bereich": [
+    "endo"
+   ],
+   "titel": "Robotic arm-assisted patellofemoral joint arthroplasty achieves good short-term survival and functional outcomes: A systematic review and meta-analysis.",
+   "quelle": "Williamson et al., Knee Surg Sports Traumatol Arthrosc 2026 · PMID 41614388",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41614388/",
+   "ki": false,
+   "quelleTyp": "pubmed"
+  },
+  {
+   "id": "pm41614362",
+   "typ": "studie",
+   "status": "RCT · Knee Surg Sports Traumatol Arthrosc",
+   "datum": "2026-01",
+   "bereich": [
+    "endo"
+   ],
+   "titel": "Process evaluation of an integrated personalized eHealth programme after total and unicompartmental knee arthroplasty-Results of the multicenter ACTIVE randomized controlled trial.",
+   "quelle": "Straat et al., Knee Surg Sports Traumatol Arthrosc 2026 · PMID 41614362",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41614362/",
+   "ki": false,
+   "quelleTyp": "pubmed"
+  },
+  {
+   "id": "pm41491947",
+   "typ": "studie",
+   "status": "Meta-Analyse · Ann Med",
+   "datum": "2026-01",
+   "bereich": [
+    "endo",
+    "knie"
+   ],
+   "titel": "Risikovorhersagemodelle für Bluttransfusionen bei Patienten mit Hüft- und Knietotalendoprothetik: eine systematische Übersichtsarbeit und Meta-Analyse.",
+   "quelle": "Liu et al., Ann Med 2026 · PMID 41491947",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41491947/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Risk prediction models for blood transfusion in patients undergoing total hip and knee arthroplasty: a systematic review and meta-analysis."
   },
   {
    "id": "pm41508374",
@@ -691,6 +1099,23 @@
    "link": "https://pubmed.ncbi.nlm.nih.gov/40762570/",
    "ki": true,
    "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "pm41414717",
+   "typ": "studie",
+   "status": "RCT · Int Biomech",
+   "datum": "2025-12",
+   "bereich": [
+    "fuss"
+   ],
+   "titel": "Auswirkungen eines koordinierten Pilates-Trainings für Rumpf und untere Extremitäten auf Gang und Gleichgewicht bei Frauen mit flexiblem Pes planus: eine randomisierte kontrollierte Pilotstudie.",
+   "quelle": "Kim et al., Int Biomech 2026 · PMID 41414717",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41414717/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Effects of core-lower limb coordinated Pilates on gait and balance in women with flexible pes planus: a pilot randomized controlled trial."
   },
   {
    "id": "pm41467767",
