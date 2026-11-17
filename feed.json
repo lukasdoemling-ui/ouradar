@@ -1,10 +1,26 @@
 {
  "version": 1,
- "generated": "2026-11-16T08:55:34.582Z",
+ "generated": "2026-11-17T05:26:35.550Z",
  "lastAwmfCheck": null,
  "awmfStand": null,
  "hinweis": "KI-erstellte Zusammenfassungen (ki: true) sind nicht ärztlich geprüft. Maßgeblich ist die verlinkte Originalquelle. Publikationsdaten: PubMed®/NLM.",
  "items": [
+  {
+   "id": "pm42929478",
+   "typ": "studie",
+   "status": "RCT · Acta Anaesthesiol Scand",
+   "datum": "2027-01",
+   "bereich": [
+    "ws"
+   ],
+   "titel": "Haemodynamic and Respiratory Effects of Dexmedetomidine as an Adjuvant to Oxycodone Patient-Controlled Analgesia After Lumbar Spinal Fusion: A Post Hoc Analysis of the DoseRespDex Randomised Controlled Trial.",
+   "quelle": "Mäkelä et al., Acta Anaesthesiol Scand 2027 · PMID 42929478",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42929478/",
+   "ki": false,
+   "quelleTyp": "pubmed"
+  },
   {
    "id": "pm42924980",
    "typ": "studie",
@@ -42,6 +58,24 @@
    "originaltitel": "The Effect of Exercise Training on Individuals With Osteoporotic Vertebral Fracture: A Randomized Controlled Trial."
   },
   {
+   "id": "pm42720263",
+   "typ": "studie",
+   "status": "Meta-Analyse · Int J Clin Pharmacol Ther",
+   "datum": "2026-12",
+   "bereich": [
+    "trauma",
+    "alter"
+   ],
+   "titel": "Na-abhängige Glukosetransporter-2-Inhibitoren, Knochenmineraldichte und Frakturrisiko bei Typ-2-Diabetes-mellitus mit Osteoporose: Eine Meta-Analyse von 2.000 Patienten.",
+   "quelle": "Kong et al., Int J Clin Pharmacol Ther 2026 · PMID 42720263",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42720263/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Na-dependent glucose transporter-2 inhibitors, bone mineral density, and fracture risk in type-2 diabetes mellitus with osteoporosis: A meta-analysis of 2,000 patients."
+  },
+  {
    "id": "pm42708792",
    "typ": "studie",
    "status": "Meta-Analyse · Pak J Pharm Sci",
@@ -58,6 +92,23 @@
    "ki": true,
    "quelleTyp": "pubmed",
    "originaltitel": "Anti-inflammatory agents after hip and shoulder arthroplasty: A systematic review and meta-analysis."
+  },
+  {
+   "id": "pm43035607",
+   "typ": "studie",
+   "status": "RCT · Arch Orthop Trauma Surg",
+   "datum": "2026-11",
+   "bereich": [
+    "knie"
+   ],
+   "titel": "Fünf-Jahres-Ergebnisse nach orthesenfreier versus orthesenbasierter Rehabilitation nach isolierter Rekonstruktion des vorderen Kreuzbands mit Hamstring-Sehnen-Autotransplantat: Langzeit-Follow-up einer randomisierten kontrollierten Studie.",
+   "quelle": "Schoepp et al., Arch Orthop Trauma Surg 2026 · PMID 43035607",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43035607/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Five-year outcomes after brace-free versus brace-based rehabilitation following isolated anterior cruciate ligament reconstruction with hamstring tendon autograft: long-term follow-up of a randomized controlled trial."
   },
   {
    "id": "pm43024366",
@@ -219,6 +270,54 @@
    "ki": true,
    "quelleTyp": "pubmed",
    "originaltitel": "Application of antibiotic-loaded bone cement in unicompartmental knee arthroplasty: inhibiting IL-6 levels and reducing postoperative infection rate."
+  },
+  {
+   "id": "pm42777425",
+   "typ": "studie",
+   "status": "RCT · J Clin Neurosci",
+   "datum": "2026-09",
+   "bereich": [
+    "ws"
+   ],
+   "titel": "Application effect and sleep quality impact of multimodal analgesia (MMA) combined with Mindfulness-Based stress reduction (MBSR) therapy in Post-Spinal fusion surgery patients.",
+   "quelle": "Wu et al., J Clin Neurosci 2026 · PMID 42777425",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42777425/",
+   "ki": false,
+   "quelleTyp": "pubmed"
+  },
+  {
+   "id": "pm42727261",
+   "typ": "studie",
+   "status": "Meta-Analyse · Arch Gerontol Geriatr",
+   "datum": "2026-09",
+   "bereich": [
+    "ws"
+   ],
+   "titel": "Serum uric acid, sarcopenia, and muscle strength: A systematic review of dose-response evidence with exploratory meta-analysis.",
+   "quelle": "Liu et al., Arch Gerontol Geriatr 2026 · PMID 42727261",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42727261/",
+   "ki": false,
+   "quelleTyp": "pubmed"
+  },
+  {
+   "id": "pm42700672",
+   "typ": "studie",
+   "status": "Meta-Analyse · J Clin Neurosci",
+   "datum": "2026-09",
+   "bereich": [
+    "ws"
+   ],
+   "titel": "Standalone lateral and oblique approaches vs traditional posterior approaches for adjacent segment disease: A systematic review and meta-analysis.",
+   "quelle": "Shah et al., J Clin Neurosci 2026 · PMID 42700672",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42700672/",
+   "ki": false,
+   "quelleTyp": "pubmed"
   },
   {
    "id": "pm42730713",
@@ -393,6 +492,88 @@
    "link": "https://www.aerzteblatt.de/news/endoprothetik-bei-niedrigem-thromboserisiko-reicht-eine-vte-prophylaxe-mit-ass-d570b803-194b-42f7-b01c-bf918e08c93e",
    "ki": true,
    "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "pm42523033",
+   "typ": "studie",
+   "status": "RCT · Arthroscopy",
+   "datum": "2026-07",
+   "bereich": [
+    "schulter",
+    "infekt"
+   ],
+   "titel": "Die Operationszeit ist bei der arthroskopischen Rotatorenmanschettenrekonstruktion ein besserer Prädiktor für eine Nahtkontamination als die Methode der Hautvorbereitung: Eine prospektive randomisierte Studie an männlichen Patienten.",
+   "quelle": "Kamijo et al., Arthroscopy 2026 · PMID 42523033",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42523033/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Surgical Time Is More Predictive of Suture Contamination During Arthroscopic Rotator Cuff Repair Compared With Skin-Preparation Method: A Prospective Randomized Study on Male Patients."
+  },
+  {
+   "id": "pm42496014",
+   "typ": "studie",
+   "status": "RCT · Arthroscopy",
+   "datum": "2026-07",
+   "bereich": [
+    "schulter"
+   ],
+   "titel": "Comparable Midterm Outcomes for Ultrasound-Guided Needling Versus High-Energy Shockwave Therapy for Rotator Cuff Calcific Tendinitis: A Randomized Controlled Trial.",
+   "quelle": "van Noort et al., Arthroscopy 2026 · PMID 42496014",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42496014/",
+   "ki": false,
+   "quelleTyp": "pubmed"
+  },
+  {
+   "id": "pm42457108",
+   "typ": "studie",
+   "status": "RCT · Arch Phys Med Rehabil",
+   "datum": "2026-07",
+   "bereich": [
+    "schulter"
+   ],
+   "titel": "Adherence to Exercise Intervention Including Pain Threshold, Exercise and Physiotherapy Sessions for Patients With Chronic Rotator Cuff Tendinopathy.",
+   "quelle": "Åxman et al., Arch Phys Med Rehabil 2026 · PMID 42457108",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42457108/",
+   "ki": false,
+   "quelleTyp": "pubmed"
+  },
+  {
+   "id": "pm42504098",
+   "typ": "studie",
+   "status": "RCT · Ann Med",
+   "datum": "2026-07",
+   "bereich": [
+    "ws"
+   ],
+   "titel": "Liposomal bupivacaine versus ropivacaine for surgical site infiltration in lumbar fusion: a prospective randomized controlled trial.",
+   "quelle": "Yue et al., Ann Med 2026 · PMID 42504098",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42504098/",
+   "ki": false,
+   "quelleTyp": "pubmed"
+  },
+  {
+   "id": "pm42480657",
+   "typ": "studie",
+   "status": "RCT · Spine J",
+   "datum": "2026-07",
+   "bereich": [
+    "ws"
+   ],
+   "titel": "Cost-effectiveness of biportal endoscopic spine surgery compared with microscopic surgery for lumbar degenerative diseases: a pooled analysis of 2 randomized controlled trials.",
+   "quelle": "Park et al., Spine J 2026 · PMID 42480657",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42480657/",
+   "ki": false,
+   "quelleTyp": "pubmed"
   },
   {
    "id": "pm42480043",
@@ -584,6 +765,38 @@
    "link": "https://research.regionh.dk/da/publications/supervised-rehabilitation-comparable-to-single-advice-session-aft/",
    "ki": true,
    "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "pm42200558",
+   "typ": "studie",
+   "status": "Meta-Analyse · Arthroscopy",
+   "datum": "2026-05",
+   "bereich": [
+    "schulter"
+   ],
+   "titel": "Platelet-Rich Products Can Have Variable Effects on Outcomes After Arthroscopic Full-Thickness Rotator Cuff Repair: A Meta-analysis of Randomized Controlled Trials.",
+   "quelle": "Chen et al., Arthroscopy 2026 · PMID 42200558",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42200558/",
+   "ki": false,
+   "quelleTyp": "pubmed"
+  },
+  {
+   "id": "pm42162891",
+   "typ": "studie",
+   "status": "RCT · J Shoulder Elbow Surg",
+   "datum": "2026-05",
+   "bereich": [
+    "schulter"
+   ],
+   "titel": "A nonopioid multimodal pain protocol achieves equivalent pain control after total shoulder arthroplasty: a randomized controlled trial.",
+   "quelle": "Evans et al., J Shoulder Elbow Surg 2026 · PMID 42162891",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42162891/",
+   "ki": false,
+   "quelleTyp": "pubmed"
   },
   {
    "id": "pm42169443",
