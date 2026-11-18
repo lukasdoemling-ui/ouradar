@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-17T05:26:35.550Z",
+ "generated": "2026-11-18T04:24:38.931Z",
  "lastAwmfCheck": null,
  "awmfStand": null,
  "hinweis": "KI-erstellte Zusammenfassungen (ki: true) sind nicht ärztlich geprüft. Maßgeblich ist die verlinkte Originalquelle. Publikationsdaten: PubMed®/NLM.",
@@ -92,6 +92,59 @@
    "ki": true,
    "quelleTyp": "pubmed",
    "originaltitel": "Anti-inflammatory agents after hip and shoulder arthroplasty: A systematic review and meta-analysis."
+  },
+  {
+   "id": "pm43038553",
+   "typ": "studie",
+   "status": "Meta-Analyse · J Med Internet Res",
+   "datum": "2026-11",
+   "bereich": [
+    "endo",
+    "knie"
+   ],
+   "titel": "KI-Vorhersagemodelle für die Entlassungsdisposition bei Patienten nach primärer Knie-Totalendoprothese: Systematische Übersichtsarbeit und Meta-Analyse.",
+   "quelle": "Xie et al., J Med Internet Res 2026 · PMID 43038553",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43038553/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "AI Predictive Models for Discharge Disposition in Patients Following Primary Total Knee Arthroplasty: Systematic Review and Meta-Analysis."
+  },
+  {
+   "id": "pm43017140",
+   "typ": "studie",
+   "status": "RCT · Drug Des Devel Ther",
+   "datum": "2026-11",
+   "bereich": [
+    "ws"
+   ],
+   "titel": "Wirkung zweier auf Desfluran-Konzentration basierender Anästhesiestrategien auf das Monitoring visuell evozierter Blitzpotenziale während Wirbelsäulenoperationen: Eine randomisierte Überlegenheitsstudie",
+   "quelle": "Wang et al., Drug Des Devel Ther 2026 · PMID 43017140",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43017140/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Effect of Two Desflurane Concentration-Based Anesthetic Strategies on Flash Visual Evoked Potential Monitoring During Spine Surgery: A Randomized Superiority Trial."
+  },
+  {
+   "id": "pm43013818",
+   "typ": "studie",
+   "status": "RCT · N Engl J Med",
+   "datum": "2026-11",
+   "bereich": [
+    "endo",
+    "knie"
+   ],
+   "titel": "Prävention venöser Thromboembolien nach totalem Hüft- oder Kniegelenkersatz.",
+   "quelle": "Pellegrini et al., N Engl J Med 2026 · PMID 43013818",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43013818/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Prevention of Venous Thromboembolism after Total Hip or Knee Replacement."
   },
   {
    "id": "pm43035607",
@@ -235,6 +288,23 @@
    "originaltitel": "Vegetarian and Vegan Diets and the Risk of Hip Fracture in Adults: A Systematic Review and Meta-analysis."
   },
   {
+   "id": "pm42913286",
+   "typ": "studie",
+   "status": "RCT · Phys Ther Sport",
+   "datum": "2026-10",
+   "bereich": [
+    "knie"
+   ],
+   "titel": "Vergleich von Short-Foot- und Toe-Curl-Übungen hinsichtlich der Bewegungskontrolle bei der einbeinigen Landung nach Rekonstruktion des vorderen Kreuzbandes: Eine explorative randomisierte kontrollierte Studie.",
+   "quelle": "Suzuki et al., Phys Ther Sport 2026 · PMID 42913286",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42913286/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Comparison of short-foot and toe-curl exercises on movement control during single-leg landing after ACL reconstruction: An exploratory randomized controlled trial."
+  },
+  {
    "id": "pm42988394",
    "typ": "studie",
    "status": "RCT · Zhongguo Gu Shang",
@@ -270,6 +340,40 @@
    "ki": true,
    "quelleTyp": "pubmed",
    "originaltitel": "Application of antibiotic-loaded bone cement in unicompartmental knee arthroplasty: inhibiting IL-6 levels and reducing postoperative infection rate."
+  },
+  {
+   "id": "pm42784849",
+   "typ": "studie",
+   "status": "RCT · Phys Ther Sport",
+   "datum": "2026-09",
+   "bereich": [
+    "fuss"
+   ],
+   "titel": "Die Kombination aus dreidimensionalen Sprunggelenksübungen und Short-Foot-Training verbessert die Propriozeption und das dynamische Gleichgewicht bei weiblichen Karatekas mit Plattfuß: Eine randomisierte kontrollierte Studie.",
+   "quelle": "Ghadiri et al., Phys Ther Sport 2026 · PMID 42784849",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42784849/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Combining three-dimensional ankle exercises with short-foot training improves proprioception and dynamic balance in female karatekas with flatfoot: A randomized controlled trial."
+  },
+  {
+   "id": "pm42804769",
+   "typ": "studie",
+   "status": "RCT · Ann Intern Med",
+   "datum": "2026-09",
+   "bereich": [
+    "knie"
+   ],
+   "titel": "Bewegungstherapie und Schulung für junge Erwachsene mit anhaltenden Knieproblemen nach Rekonstruktion des vorderen Kreuzbands: Eine randomisierte klinische Studie.",
+   "quelle": "Culvenor et al., Ann Intern Med 2026 · PMID 42804769",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42804769/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Exercise Therapy and Education for Young Adults With Persistent Knee Problems After Anterior Cruciate Ligament Reconstruction : A Randomized Clinical Trial."
   },
   {
    "id": "pm42777425",
@@ -494,6 +598,24 @@
    "quelleTyp": "kuratiert"
   },
   {
+   "id": "pm42437501",
+   "typ": "studie",
+   "status": "RCT · N Engl J Med",
+   "datum": "2026-07",
+   "bereich": [
+    "endo",
+    "knie"
+   ],
+   "titel": "Rivaroxaban gefolgt von Aspirin vs. Aspirin allein nach Hüft- oder Knie-Totalendoprothetik.",
+   "quelle": "Shivakumar et al., N Engl J Med 2026 · PMID 42437501",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42437501/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Rivaroxaban Then Aspirin vs. Aspirin Alone after Total Hip or Knee Arthroplasty."
+  },
+  {
    "id": "pm42523033",
    "typ": "studie",
    "status": "RCT · Arthroscopy",
@@ -662,6 +784,23 @@
    "quelleTyp": "kuratiert"
   },
   {
+   "id": "pm42242426",
+   "typ": "studie",
+   "status": "Meta-Analyse · Spine J",
+   "datum": "2026-06",
+   "bereich": [
+    "ws"
+   ],
+   "titel": "Paraspinale Muskulatur und Anschlusssegmenterkrankung nach lumbaler Fusion: eine systematische Übersichtsarbeit und Meta-Analyse der Fusion mit und ohne posteriore Instrumentierung.",
+   "quelle": "McNamee et al., Spine J 2026 · PMID 42242426",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42242426/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Paraspinal musculature and adjacent segment disease after lumbar fusion: a systematic review and meta-analysis of fusion with and without posterior instrumentation."
+  },
+  {
    "id": "pm42249596",
    "typ": "studie",
    "status": "Meta-Analyse · Sports Health",
@@ -765,6 +904,24 @@
    "link": "https://research.regionh.dk/da/publications/supervised-rehabilitation-comparable-to-single-advice-session-aft/",
    "ki": true,
    "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "pm42084138",
+   "typ": "studie",
+   "status": "Meta-Analyse · J Pediatr Orthop",
+   "datum": "2026-05",
+   "bereich": [
+    "trauma",
+    "kinder"
+   ],
+   "titel": "Operative Versorgung pädiatrischer suprakondylärer Humerusfrakturen tagsüber versus außerhalb der regulären Arbeitszeiten: Eine Meta-Analyse.",
+   "quelle": "Boutros et al., J Pediatr Orthop 2026 · PMID 42084138",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42084138/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Daytime Versus After-hours Surgical Fixation of Pediatric Supracondylar Humeral Fractures: A Meta-analysis."
   },
   {
    "id": "pm42200558",
@@ -1090,6 +1247,23 @@
    "link": "https://www.aerzteblatt.de/news/operationen-s3-leitlinie-zum-umgang-mit-gebrechlichen-patienten-vorgestellt-cca90b77-a475-4a85-9f1a-0f9d2747a2d0",
    "ki": true,
    "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "pm41755546",
+   "typ": "studie",
+   "status": "Meta-Analyse · Ann Med",
+   "datum": "2026-02",
+   "bereich": [
+    "infekt"
+   ],
+   "titel": "Vergleich der Wirksamkeit von Chlorhexidin und Povidon-Iod zur Desinfektion des Operationsgebiets: eine systematische Übersichtsarbeit und Meta-Analyse randomisierter kontrollierter Studien.",
+   "quelle": "Wang et al., Ann Med 2026 · PMID 41755546",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41755546/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Comparing the efficacy of chlorhexidine and povidone-iodine for surgical site disinfection: a systematic review and meta-analysis from randomized controlled trials."
   },
   {
    "id": "pm41719009",
