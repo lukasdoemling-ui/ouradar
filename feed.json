@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-18T04:24:38.931Z",
+ "generated": "2026-11-19T04:28:42.660Z",
  "lastAwmfCheck": null,
  "awmfStand": null,
  "hinweis": "KI-erstellte Zusammenfassungen (ki: true) sind nicht ärztlich geprüft. Maßgeblich ist die verlinkte Originalquelle. Publikationsdaten: PubMed®/NLM.",
@@ -92,6 +92,22 @@
    "ki": true,
    "quelleTyp": "pubmed",
    "originaltitel": "Anti-inflammatory agents after hip and shoulder arthroplasty: A systematic review and meta-analysis."
+  },
+  {
+   "id": "pm42993996",
+   "typ": "studie",
+   "status": "Meta-Analyse · J Craniomaxillofac Surg",
+   "datum": "2026-11",
+   "bereich": [
+    "trauma"
+   ],
+   "titel": "Three-dimensional versus conventional miniplates in the management of mandibular angle fractures: A systematic review and meta-analysis.",
+   "quelle": "Rashid et al., J Craniomaxillofac Surg 2026 · PMID 42993996",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42993996/",
+   "ki": false,
+   "quelleTyp": "pubmed"
   },
   {
    "id": "pm43038553",
@@ -782,6 +798,25 @@
    "link": "https://reachmd.com/news/prp-or-bmac-added-to-acl-reconstruction-shows-no-2-year-benefit/2487786/",
    "ki": true,
    "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "pm42302095",
+   "typ": "studie",
+   "status": "RCT · J Bone Joint Surg Am",
+   "datum": "2026-06",
+   "bereich": [
+    "trauma",
+    "alter",
+    "endo"
+   ],
+   "titel": "Inzisionale Infiltration von liposomalem Bupivacain bei geriatrischer Hüftfraktur-Chirurgie: Eine randomisierte Parallelgruppen-Studie",
+   "quelle": "Yu et al., J Bone Joint Surg Am 2026 · PMID 42302095",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42302095/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Incisional Infiltration of Liposomal Bupivacaine in Geriatric Hip Fracture Surgery: A Randomized Parallel-Group Trial."
   },
   {
    "id": "pm42242426",
