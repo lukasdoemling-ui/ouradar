@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-20T04:09:57.215Z",
+ "generated": "2026-11-21T04:18:33.078Z",
  "lastAwmfCheck": null,
  "awmfStand": null,
  "hinweis": "KI-erstellte Zusammenfassungen (ki: true) sind nicht ärztlich geprüft. Maßgeblich ist die verlinkte Originalquelle. Publikationsdaten: PubMed®/NLM.",
@@ -92,6 +92,42 @@
    "ki": true,
    "quelleTyp": "pubmed",
    "originaltitel": "Anti-inflammatory agents after hip and shoulder arthroplasty: A systematic review and meta-analysis."
+  },
+  {
+   "id": "pm43008900",
+   "typ": "studie",
+   "status": "Meta-Analyse · Complement Ther Med",
+   "datum": "2026-11",
+   "bereich": [
+    "endo",
+    "knie"
+   ],
+   "titel": "Vergleichende Wirksamkeit nicht-pharmakologischer Interventionen auf postoperative Kinesiophobie bei Knietotalendoprothetik: Ein systematisches Review und eine Netzwerk-Metaanalyse randomisierter kontrollierter Studien",
+   "quelle": "Xie et al., Complement Ther Med 2026 · PMID 43008900",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43008900/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Comparative effectiveness of non-pharmacological interventions on postoperative kinesiophobia in total knee arthroplasty: A systematic review and network meta-analysis of randomized controlled trials."
+  },
+  {
+   "id": "pm43025198",
+   "typ": "studie",
+   "status": "RCT · J Clin Neurosci",
+   "datum": "2026-11",
+   "bereich": [
+    "ws"
+   ],
+   "titel": "Vorhersage von Ergebnissen nach Mikrodiskektomie mittels angewandtem maschinellem Lernen",
+   "quelle": "Roadley et al., J Clin Neurosci 2027 · PMID 43025198",
+   "kurz": "Diese multizentrische Studie nutzte Daten einer randomisierten kontrollierten Studie mit 211 Patientinnen und Patienten (152 analysierte Fälle), um mittels Modellen des maschinellen Lernens eine Re-Herniation nach 12 Monaten anhand präoperativer klinischer und demografischer Daten vorherzusagen. Signifikante Prädiktoren für eine Re-Herniation waren der Raucherstatus (11-fach höhere Wahrscheinlichkeit) sowie häufige Vorstellungen in der Notaufnahme (19-fach höhere Wahrscheinlichkeit). Das Random-Forest-Modell erzielte die höchste Vorhersageleistung mit einem MCC von 0,47 und einer AUC von 0,69.",
+   "praxis": "Modelle des maschinellen Lernens, insbesondere Random Forest, zeigten eine moderate Vorhersagefähigkeit für eine Re-Herniation nach Mikrodiskektomie und können durch die Identifizierung von Hochrisikopatienten die klinische Entscheidungsfindung für personalisiertere Behandlungsstrategien verbessern.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43025198/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Predicting outcomes in microdiscectomy surgery with applied machine learning.",
+   "praxisLabel": "Fazit der Autoren (laut Abstract)"
   },
   {
    "id": "pm42993996",
@@ -302,6 +338,58 @@
    "ki": true,
    "quelleTyp": "pubmed",
    "originaltitel": "Vegetarian and Vegan Diets and the Risk of Hip Fracture in Adults: A Systematic Review and Meta-analysis."
+  },
+  {
+   "id": "pm43062323",
+   "typ": "studie",
+   "status": "Meta-Analyse · J Am Acad Orthop Surg",
+   "datum": "2026-10",
+   "bereich": [
+    "endo",
+    "trauma"
+   ],
+   "titel": "Die Inzidenz später periprothetischer Femurfrakturen nach Implantattyp – eine systematische Übersichtsarbeit und Meta-Analyse.",
+   "quelle": "Brkljac et al., J Am Acad Orthop Surg 2026 · PMID 43062323",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43062323/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "The Incidence of Late Periprosthetic Femoral Fractures by Implant Type-A Systematic Review and Meta-Analysis."
+  },
+  {
+   "id": "pm42946095",
+   "typ": "studie",
+   "status": "Meta-Analyse · Complement Ther Med",
+   "datum": "2026-10",
+   "bereich": [
+    "knie"
+   ],
+   "titel": "Vergleichende Effekte von Interventionen zur motorischen Kontrolle auf neuromuskuläre und biomechanische Ergebnisse nach Rekonstruktion des vorderen Kreuzbandes: Eine systematische Übersichtsarbeit und Netzwerk-Metaanalyse.",
+   "quelle": "Liang et al., Complement Ther Med 2026 · PMID 42946095",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42946095/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Comparative effects of motor-control interventions on neuromuscular and biomechanical outcomes after anterior cruciate ligament reconstruction: A systematic review and network meta-analysis."
+  },
+  {
+   "id": "pm42966216",
+   "typ": "studie",
+   "status": "Meta-Analyse · J Clin Neurosci",
+   "datum": "2026-10",
+   "bereich": [
+    "ws"
+   ],
+   "titel": "Inzidentelle Durarisse unter kontinuierlicher Spülung in der endoskopischen Lendenwirbelsäulenchirurgie: Eine systematische Übersichtsarbeit und Meta-Analyse.",
+   "quelle": "Ghodke et al., J Clin Neurosci 2027 · PMID 42966216",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42966216/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Incidental dural tears under continuous irrigation in endoscopic lumbar spine surgery: A systematic review and meta-analysis."
   },
   {
    "id": "pm42913286",
