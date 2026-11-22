@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-21T04:18:33.078Z",
+ "generated": "2026-11-22T04:12:40.581Z",
  "lastAwmfCheck": null,
  "awmfStand": null,
  "hinweis": "KI-erstellte Zusammenfassungen (ki: true) sind nicht ärztlich geprüft. Maßgeblich ist die verlinkte Originalquelle. Publikationsdaten: PubMed®/NLM.",
@@ -340,6 +340,24 @@
    "originaltitel": "Vegetarian and Vegan Diets and the Risk of Hip Fracture in Adults: A Systematic Review and Meta-analysis."
   },
   {
+   "id": "pm42925795",
+   "typ": "studie",
+   "status": "Meta-Analyse · Foot (Edinb)",
+   "datum": "2026-10",
+   "bereich": [
+    "trauma",
+    "fuss"
+   ],
+   "titel": "Langzeitergebnisse der Suture-Button- versus Syndesmoseschrauben-Fixierung bei Syndesmosenverletzungen des Sprunggelenks: Eine systematische Übersichtsarbeit und Meta-Analyse randomisierter kontrollierter Studien.",
+   "quelle": "Oesman et al., Foot (Edinb) 2026 · PMID 42925795",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42925795/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Long-term outcomes of suture button vs syndesmotic screw fixation for ankle syndesmotic injuries: A systematic review and meta-analysis of randomized controlled trials."
+  },
+  {
    "id": "pm43062323",
    "typ": "studie",
    "status": "Meta-Analyse · J Am Acad Orthop Surg",
@@ -444,6 +462,79 @@
    "ki": true,
    "quelleTyp": "pubmed",
    "originaltitel": "Application of antibiotic-loaded bone cement in unicompartmental knee arthroplasty: inhibiting IL-6 levels and reducing postoperative infection rate."
+  },
+  {
+   "id": "pm42863360",
+   "typ": "studie",
+   "status": "Meta-Analyse · J Plast Reconstr Aesthet Surg",
+   "datum": "2026-09",
+   "bereich": [
+    "trauma",
+    "infekt"
+   ],
+   "titel": "Meta-Analyse unerwünschter Ergebnisse nach Weichteilrekonstruktion komplexer offener Frakturen der unteren Extremität",
+   "quelle": "Koubeh et al., J Plast Reconstr Aesthet Surg 2026 · PMID 42863360",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42863360/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Meta-analysis of adverse outcomes following soft tissue reconstruction of complex open lower limb fractures."
+  },
+  {
+   "id": "pm42759157",
+   "typ": "studie",
+   "status": "Meta-Analyse · Knee",
+   "datum": "2026-09",
+   "bereich": [
+    "endo",
+    "knie"
+   ],
+   "titel": "Optimierung der perioperativen intravenösen Kortikosteroiddosierung für postoperative Ergebnisse bei der Totalendoprothetik: eine Netzwerk-Meta-Analyse.",
+   "quelle": "Kao et al., Knee 2026 · PMID 42759157",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42759157/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Optimizing perioperative intravenous corticosteroid dosing for postoperative outcomes in total joint arthroplasty: a network meta-analysis."
+  },
+  {
+   "id": "pm42743767",
+   "typ": "studie",
+   "status": "Meta-Analyse · Knee",
+   "datum": "2026-09",
+   "bereich": [
+    "endo",
+    "knie",
+    "infekt"
+   ],
+   "titel": "Zusammenhang zwischen einer Testosteronersatztherapie und medizinischen sowie implantatbezogenen Komplikationen nach Knie-Totalendoprothetik: eine systematische Übersichtsarbeit und Meta-Analyse.",
+   "quelle": "Regmi et al., Knee 2026 · PMID 42743767",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42743767/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Association of testosterone replacement therapy on medical and implant-related complications after total knee arthroplasty: a systematic review and meta-analysis."
+  },
+  {
+   "id": "pm42685462",
+   "typ": "studie",
+   "status": "Meta-Analyse · Knee",
+   "datum": "2026-09",
+   "bereich": [
+    "endo",
+    "knie"
+   ],
+   "titel": "Künstliche-Intelligenz-basierte versus konventionelle präoperative Planung zur Schätzung der tibialen und femoralen Komponentengröße in der Knie-Totalendoprothetik: eine systematische Übersichtsarbeit und Meta-Analyse.",
+   "quelle": "Jancevski et al., Knee 2026 · PMID 42685462",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42685462/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Artificial intelligence-based versus conventional preoperative templating for tibial and femoral component size estimation in total knee arthroplasty: a systematic review and meta-analysis."
   },
   {
    "id": "pm42784849",
@@ -631,6 +722,77 @@
    "ki": true,
    "quelleTyp": "pubmed",
    "originaltitel": "Joint-Specific Effects of Previous Arthroscopic Surgery on the Risk of Infection Following Knee, Hip, and Shoulder Arthroplasty: A Meta-Analysis Based on Observational Studies."
+  },
+  {
+   "id": "pm42641204",
+   "typ": "studie",
+   "status": "Meta-Analyse · Knee",
+   "datum": "2026-08",
+   "bereich": [
+    "endo",
+    "knie"
+   ],
+   "titel": "Funktionelle Ergebnisse von patientenspezifischer Instrumentierung im Vergleich zu konventioneller Instrumentierung beim unikompartimentellen Kniegelenkersatz: Eine systematische Übersichtsarbeit und Meta-Analyse.",
+   "quelle": "Ruhle et al., Knee 2026 · PMID 42641204",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42641204/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Functional outcomes of patient-specific instrumentation versus conventional instrumentation for unicompartmental knee replacement: A systematic review and meta-analysis."
+  },
+  {
+   "id": "pm42617482",
+   "typ": "studie",
+   "status": "RCT · Knee",
+   "datum": "2026-08",
+   "bereich": [
+    "endo",
+    "knie"
+   ],
+   "titel": "Hochdosierte intraartikuläre versus gewichtsbasierte periartikuläre Tranexamsäure bei primärer Knietotalendoprothetik: eine randomisierte kontrollierte Studie",
+   "quelle": "Plangsiri et al., Knee 2026 · PMID 42617482",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42617482/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "High-dose intra-articular versus weight-based peri-articular tranexamic acid in primary total knee arthroplasty: a randomized controlled trial."
+  },
+  {
+   "id": "pm42607449",
+   "typ": "studie",
+   "status": "Meta-Analyse · Knee",
+   "datum": "2026-08",
+   "bereich": [
+    "endo",
+    "knie"
+   ],
+   "titel": "Einfluss der axialen Ausrichtung auf die Patientenergebnisse nach Knie-Totalendoprothese (TKR): eine systematische Übersichtsarbeit und Meta-Analyse.",
+   "quelle": "Kumar et al., Knee 2026 · PMID 42607449",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42607449/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Effect of axial alignment on patient outcomes following total knee replacement (TKR): a systematic review and meta analysis."
+  },
+  {
+   "id": "pm42566984",
+   "typ": "studie",
+   "status": "Meta-Analyse · Knee",
+   "datum": "2026-08",
+   "bereich": [
+    "knie"
+   ],
+   "titel": "Femorale Fixierung mit fester und verstellbarer Schlaufe liefert vergleichbare Ergebnisse nach Rekonstruktion des vorderen Kreuzbands: Eine Meta-Analyse vergleichender Studien.",
+   "quelle": "D'Ambrosi et al., Knee 2026 · PMID 42566984",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42566984/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Fixed-loop and adjustable-loop femoral fixation provide comparable outcomes after anterior cruciate ligament reconstruction: A meta-analysis of comparative studies."
   },
   {
    "id": "pm42611193",
