@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-23T04:25:48.341Z",
+ "generated": "2026-11-24T04:24:21.874Z",
  "lastAwmfCheck": null,
  "awmfStand": null,
  "hinweis": "KI-erstellte Zusammenfassungen (ki: true) sind nicht ärztlich geprüft. Maßgeblich ist die verlinkte Originalquelle. Publikationsdaten: PubMed®/NLM.",
@@ -724,6 +724,23 @@
    "originaltitel": "Joint-Specific Effects of Previous Arthroscopic Surgery on the Risk of Infection Following Knee, Hip, and Shoulder Arthroplasty: A Meta-Analysis Based on Observational Studies."
   },
   {
+   "id": "pm42594296",
+   "typ": "studie",
+   "status": "Meta-Analyse · Spine (Phila Pa 1976)",
+   "datum": "2026-08",
+   "bereich": [
+    "ws"
+   ],
+   "titel": "Proximales junktionales Versagen nach Operation einer Wirbelsäulendeformität im Erwachsenenalter: Eine systematische Übersichtsarbeit und Meta-Analyse prädiktiver Risikofaktoren.",
+   "quelle": "Patel et al., Spine (Phila Pa 1976) 2026 · PMID 42594296",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42594296/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Proximal Junctional Failure After Adult Spinal Deformity Surgery: A Systematic Review and Meta-Analysis of Predictive Risk Factors."
+  },
+  {
    "id": "pm42641204",
    "typ": "studie",
    "status": "Meta-Analyse · Knee",
@@ -862,6 +879,24 @@
    "link": "https://www.aerzteblatt.de/news/endoprothetik-bei-niedrigem-thromboserisiko-reicht-eine-vte-prophylaxe-mit-ass-d570b803-194b-42f7-b01c-bf918e08c93e",
    "ki": true,
    "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "pm42383884",
+   "typ": "studie",
+   "status": "RCT · Clin Rehabil",
+   "datum": "2026-07",
+   "bereich": [
+    "trauma",
+    "alter"
+   ],
+   "titel": "Wirkung oraler Nahrungsergänzungsmittel auf die körperliche Funktionsfähigkeit bei älteren Patienten mit Ernährungsrisiko, die mit einem Rehabilitationsplan entlassen wurden: Eine randomisierte kontrollierte Studie.",
+   "quelle": "Jensen et al., Clin Rehabil 2026 · PMID 42383884",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42383884/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Effect of oral nutritional supplements on physical functional performance in older patients at nutritional risk discharged with a rehabilitation plan: A randomised controlled trial."
   },
   {
    "id": "pm42437501",
@@ -1048,6 +1083,24 @@
    "link": "https://reachmd.com/news/prp-or-bmac-added-to-acl-reconstruction-shows-no-2-year-benefit/2487786/",
    "ki": true,
    "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "pm42299674",
+   "typ": "studie",
+   "status": "RCT · Clin Rehabil",
+   "datum": "2026-06",
+   "bereich": [
+    "trauma",
+    "alter"
+   ],
+   "titel": "Wirkung oraler Nahrungsergänzungsmittel auf Mortalität und Krankenhausaufnahmen bei älteren Hüftfrakturpatienten mit Ernährungsrisiko: Sekundäranalyse einer randomisierten kontrollierten Studie.",
+   "quelle": "Jensen et al., Clin Rehabil 2026 · PMID 42299674",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42299674/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Effect of oral nutritional supplements on mortality and hospital admissions in older hip fracture patients at nutritional risk: secondary analysis of a randomised controlled trial."
   },
   {
    "id": "pm42302095",
