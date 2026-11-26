@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-25T04:25:46.131Z",
+ "generated": "2026-11-26T04:34:01.373Z",
  "lastAwmfCheck": null,
  "awmfStand": null,
  "hinweis": "KI-erstellte Zusammenfassungen (ki: true) sind nicht ärztlich geprüft. Maßgeblich ist die verlinkte Originalquelle. Publikationsdaten: PubMed®/NLM.",
@@ -92,6 +92,23 @@
    "ki": true,
    "quelleTyp": "pubmed",
    "originaltitel": "Anti-inflammatory agents after hip and shoulder arthroplasty: A systematic review and meta-analysis."
+  },
+  {
+   "id": "pm43083944",
+   "typ": "studie",
+   "status": "RCT · Lasers Med Sci",
+   "datum": "2026-11",
+   "bereich": [
+    "trauma"
+   ],
+   "titel": "Analyse der geschlossenen Reposition und internen Fixation mittels PFNA in Kombination mit extrakorporaler Stoßwellentherapie bei intertrochantären Femurfrakturen.",
+   "quelle": "Liu et al., Lasers Med Sci 2026 · PMID 43083944",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43083944/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Analysis of PFNA closed reduction and internal fixation combined with extracorporeal shock wave therapy for intertrochanteric femoral fractures."
   },
   {
    "id": "pm43008900",
@@ -1083,6 +1100,24 @@
    "link": "https://reachmd.com/news/prp-or-bmac-added-to-acl-reconstruction-shows-no-2-year-benefit/2487786/",
    "ki": true,
    "quelleTyp": "kuratiert"
+  },
+  {
+   "id": "pm42370877",
+   "typ": "studie",
+   "status": "Meta-Analyse · J Pediatr Orthop B",
+   "datum": "2026-06",
+   "bereich": [
+    "trauma",
+    "kinder"
+   ],
+   "titel": "Behandlungstrends und Ergebnisse von Femurfrakturen bei Kindern mit Zerebralparese: eine systematische Übersichtsarbeit und Meta-Analyse",
+   "quelle": "Garabedian et al., J Pediatr Orthop B 2027 · PMID 42370877",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42370877/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Management trends and outcomes of femur fractures in children with cerebral palsy: a systematic review and meta-analysis."
   },
   {
    "id": "pm42299674",
