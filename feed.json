@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-26T04:34:01.373Z",
+ "generated": "2026-11-27T04:29:37.616Z",
  "lastAwmfCheck": null,
  "awmfStand": null,
  "hinweis": "KI-erstellte Zusammenfassungen (ki: true) sind nicht ärztlich geprüft. Maßgeblich ist die verlinkte Originalquelle. Publikationsdaten: PubMed®/NLM.",
@@ -92,6 +92,41 @@
    "ki": true,
    "quelleTyp": "pubmed",
    "originaltitel": "Anti-inflammatory agents after hip and shoulder arthroplasty: A systematic review and meta-analysis."
+  },
+  {
+   "id": "pm43008639",
+   "typ": "studie",
+   "status": "RCT · Injury",
+   "datum": "2026-11",
+   "bereich": [
+    "trauma",
+    "infekt"
+   ],
+   "titel": "Hat die Anzahl der Débridement-Eingriffe Einfluss auf das Infektionsrisiko bei offenen Frakturen?",
+   "quelle": "Bateman et al., Injury 2026 · PMID 43008639",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43008639/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Does the number of debridement procedures impact risk of infection in open fractures?"
+  },
+  {
+   "id": "pm43091421",
+   "typ": "studie",
+   "status": "Meta-Analyse · Med Sci (Basel)",
+   "datum": "2026-11",
+   "bereich": [
+    "schulter"
+   ],
+   "titel": "Chirurgische Reparaturstrategien bei vollständigen Supraspinatusrissen: Ein systematisches Review und eine Metaanalyse",
+   "quelle": "Enescu et al., Med Sci (Basel) 2026 · PMID 43091421",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43091421/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Surgical Repair Strategies for Full-Thickness Supraspinatus Tears: A Systematic Review and Meta-Analysis."
   },
   {
    "id": "pm43083944",
@@ -355,6 +390,77 @@
    "ki": true,
    "quelleTyp": "pubmed",
    "originaltitel": "Vegetarian and Vegan Diets and the Risk of Hip Fracture in Adults: A Systematic Review and Meta-analysis."
+  },
+  {
+   "id": "pm42994069",
+   "typ": "studie",
+   "status": "Meta-Analyse · Injury",
+   "datum": "2026-10",
+   "bereich": [
+    "trauma",
+    "infekt"
+   ],
+   "titel": "Verringert eine stärkere orthoplastische Integration tiefe Infektionen nach offenen Tibiafrakturen? Eine systematische Übersichtsarbeit und Meta-Analyse.",
+   "quelle": "Choi et al., Injury 2026 · PMID 42994069",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42994069/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Does greater orthoplastic integration reduce deep infection after open tibial fracture? A systematic review and meta-analysis."
+  },
+  {
+   "id": "pm42981910",
+   "typ": "studie",
+   "status": "Meta-Analyse · Injury",
+   "datum": "2026-10",
+   "bereich": [
+    "trauma",
+    "ws"
+   ],
+   "titel": "Lumbopelvine Fixation bei Hochenergie-Sakrumfrakturen und spinopelviner Dissoziation: Ein systematisches Review und eine Meta-Analyse zu Komplikationen, ungeplanten Revisionen und Implantatentfernungen.",
+   "quelle": "Patel et al., Injury 2026 · PMID 42981910",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42981910/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Lumbopelvic fixation for high-energy sacral fractures and spinopelvic dissociation: A systematic review and meta-analysis of complications, unplanned revision and implant removal."
+  },
+  {
+   "id": "pm42962541",
+   "typ": "studie",
+   "status": "Meta-Analyse · Injury",
+   "datum": "2026-10",
+   "bereich": [
+    "trauma"
+   ],
+   "titel": "Heilungsrate und Zeit bis zur Heilung nach Therapie mit plättchenreichem Plasma bei Frakturpseudarthrose: Ein systematisches Review und eine Meta-Analyse",
+   "quelle": "Regmi et al., Injury 2026 · PMID 42962541",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42962541/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Union rate and time to union following platelet-rich plasma therapy in fracture nonunion: A systematic review and meta-analysis."
+  },
+  {
+   "id": "pm42950703",
+   "typ": "studie",
+   "status": "Meta-Analyse · Injury",
+   "datum": "2026-10",
+   "bereich": [
+    "trauma",
+    "infekt"
+   ],
+   "titel": "Frühe Stuhldiversion versus keine initiale Diversion bei stumpfen offenen Beckenfrakturen: Eine systematische Übersichtsarbeit und Meta-Analyse zu Beckeninfektion und Mortalität.",
+   "quelle": "Ferrari et al., Injury 2026 · PMID 42950703",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42950703/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Early fecal diversion versus no initial diversion in blunt open pelvic fractures: A systematic review and meta-analysis of pelvic infection and mortality."
   },
   {
    "id": "pm42925795",
