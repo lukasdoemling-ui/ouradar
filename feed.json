@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-27T04:29:37.616Z",
+ "generated": "2026-11-28T04:14:08.593Z",
  "lastAwmfCheck": null,
  "awmfStand": null,
  "hinweis": "KI-erstellte Zusammenfassungen (ki: true) sind nicht ärztlich geprüft. Maßgeblich ist die verlinkte Originalquelle. Publikationsdaten: PubMed®/NLM.",
@@ -390,6 +390,23 @@
    "ki": true,
    "quelleTyp": "pubmed",
    "originaltitel": "Vegetarian and Vegan Diets and the Risk of Hip Fracture in Adults: A Systematic Review and Meta-analysis."
+  },
+  {
+   "id": "pm42874227",
+   "typ": "studie",
+   "status": "Meta-Analyse · Clin Biomech (Bristol)",
+   "datum": "2026-10",
+   "bereich": [
+    "fuss"
+   ],
+   "titel": "Einfluss symmetrischer und asymmetrischer Fußpronation und Fußgewölbedeformitäten auf die dreidimensionale Beckenkinematik beim Stehen und Gehen: Eine systematische Übersichtsarbeit und Meta-Analyse.",
+   "quelle": "Lee et al., Clin Biomech (Bristol) 2027 · PMID 42874227",
+   "kurz": "",
+   "praxis": "",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42874227/",
+   "ki": true,
+   "quelleTyp": "pubmed",
+   "originaltitel": "Impact of symmetrical and asymmetrical foot pronation and arch deformities on three-dimensional pelvic kinematics during standing and walking: A systematic review and Meta-analysis."
   },
   {
    "id": "pm42994069",
